@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="media-body">
                                     <span class="btn-text">Call Us On:</span>
-                                    <a href="tel:{{ $settings->phone }}" class="btn-title">{{ $settings->phone }}</a>
+                                    <a href="tel:{{ @$settings->phone }}" class="btn-title">{{ @$settings->phone }}</a>
                                 </div>
                             </div>
                         </div>

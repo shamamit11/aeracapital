@@ -29,6 +29,6 @@
     <!-- Main Js File -->
     <script src="{{ asset('assets/site/js/main.js')}}"></script>
 
-    @if($settings->ext_js_scripts )
-        {!!$settings->ext_js_scripts!!}
+    @if(@$settings->ext_js_scripts )
+        {!!@$settings->ext_js_scripts!!}
     @endif

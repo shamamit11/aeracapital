@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="media-body">
                                     <span class="footer-contact_text">Quick Call Us:</span>
-                                    <a href="tel:{{ $settings->phone }}" class="footer-contact_link">{{ $settings->phone }}</a>
+                                    <a href="tel:{{ @$settings->phone }}" class="footer-contact_link">{{ @$settings->phone }}</a>
                                 </div>
                             </div>
                             <div class="footer-contact">
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="media-body">
                                     <span class="footer-contact_text">Mail Us On:</span>
-                                    <a href="mailto:{{ $settings->email }}" class="footer-contact_link">{{ $settings->email }}</a>
+                                    <a href="mailto:{{ @$settings->email }}" class="footer-contact_link">{{ @$settings->email }}</a>
                                 </div>
                             </div>
                             <div class="footer-contact">
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="media-body">
                                     <span class="footer-contact_text">Visit Location:</span>
-                                    <a href="contact.php" class="footer-contact_link">{{ $settings->address }}</a>
+                                    <a href="contact.php" class="footer-contact_link">{{ @$settings->address }}</a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <?php echo date('Y'); ?> <a href="{{ @$settings->vat_no }}">{{ $settings->business_name }}</a>. All Rights Reserved.</p>
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <?php echo date('Y'); ?> <a href="{{ @$settings->vat_no }}">{{ @$settings->business_name }}</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 text-end d-none d-lg-block">
                         <div class="footer-links">

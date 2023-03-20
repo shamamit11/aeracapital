@@ -15,7 +15,7 @@
     </div>
     
     <div class="map-sec">
-        {!! $settings->google_map !!}
+        {!! @$settings->google_map !!}
     </div>
 
     <div class="bg-smoke space" data-bg-src="{{asset('assets/site/img/bg/contact_bg_1.png')}}">

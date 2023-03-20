@@ -4,8 +4,8 @@
     $settings = Setting::first();
 
     if(isset($row) && !empty($row)) { 
-        $meta_title = (isset($row->meta_title) && !empty($row->meta_title)) ? $row->meta_title : $settings->meta_title;
-        $meta_description = (isset($row->meta_description) && !empty($row->meta_description)) ? $row->meta_description : $settings->meta_description;
+        $meta_title = (isset($row->meta_title) && !empty($row->meta_title)) ? $row->meta_title : @$settings->meta_title;
+        $meta_description = (isset($row->meta_description) && !empty($row->meta_description)) ? $row->meta_description : @$settings->meta_description;
     }
     else {
         if(isset($seo_link) && !empty($seo_link)) {
@@ -15,13 +15,13 @@
                 $meta_description = $seo->meta_description;
             }
             else {
-                $meta_title = $settings->meta_title;
-                $meta_description = $settings->meta_description;
+                $meta_title = @$settings->meta_title;
+                $meta_description = @$settings->meta_description;
             }
         }
         else {
-            $meta_title = $settings->meta_title;
-            $meta_description = $settings->meta_description;
+            $meta_title = @$settings->meta_title;
+            $meta_description = @$settings->meta_description;
         } 
     }
 
@@ -39,11 +39,11 @@
     <meta property="og:description" content="{{  $meta_description }}" />
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="Googlebot" content="follow">
-    @if($settings->google_site_verification )
-        <meta name="google-site-verification" content="{{ $settings->google_site_verification }}" />
+    @if(@$settings->google_site_verification )
+        <meta name="google-site-verification" content="{{ @$settings->google_site_verification }}" />
     @endif
-    @if($settings->google_analytics )
-        {!!$settings->google_analytics!!}
+    @if(@$settings->google_analytics )
+        {!!@$settings->google_analytics!!}
     @endif
 
     <!-- Mobile Specific Metas -->
