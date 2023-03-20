@@ -9,7 +9,7 @@
     $settings = Setting::first();
     $social_links = SocialLink::first();
     $products = Product::limit(5)->get();
-    $blogs = Blog::limit(2)->get();
+    $blogs = Blog::where('status', 1)->limit(3)->get();
     $cms = Cms::where('is_footer_link', 1)->get();
     $section = PageSection::where('id', 5)->first();
 @endphp
@@ -112,7 +112,7 @@
                                         <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{ $blog->title }}"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title" style="margin:0; font-size: 15px;"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{ $blog->sub_title }}</a></h4>
+                                        <h4 class="post-title" style="margin:0; font-size: 15px;"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{ $blog->title }}</a></h4>
                                         <div class="recent-post-meta">
                                             <a href="#"><i class="fal fa-calendar-days"></i>{{ $blog->date }}</a>
                                         </div>
