@@ -41,7 +41,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a href="./"><img src="{{asset('assets/site/img/logo.svg')}}" alt="Aera Capital"></a>
+                                <a href="{{route('home')}}"><img src="{{asset('assets/site/img/logo.svg')}}" alt="Aera Capital"></a>
                             </div>
                         </div>
                         <div class="col-auto">
