@@ -22,7 +22,8 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        return view('site.pages.home', compact('nav', 'sub_nav', 'page_title'));
+        $seo_link = 'home';
+        return view('site.pages.home', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 
     public function about()
@@ -30,8 +31,9 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
+        $seo_link = 'about-us';
         $data['counters'] = Counter::limit(4)->get();
-        return view('site.pages.about', compact('nav', 'sub_nav', 'page_title'), $data);
+        return view('site.pages.about', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
     public function productDetail($slug)
@@ -49,10 +51,11 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
+        $seo_link = 'services';
         $data['services'] = Service::where('status', 1)->orderBy('order', 'asc')->get();
         $data['cta'] = Cta::where('id', 2)->first();
         $data['process'] = WorkProcess::orderBy('order', 'asc')->limit(4)->get();
-        return view('site.services.index', compact('nav', 'sub_nav', 'page_title'), $data);
+        return view('site.services.index', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
     public function serviceDetail($slug)
@@ -71,8 +74,9 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
+        $seo_link = 'blogs';
         $data['blogs'] = Blog::where('status', 1)->orderBy('date', 'desc')->get();
-        return view('site.blog.index', compact('nav', 'sub_nav', 'page_title'), $data);
+        return view('site.blog.index', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
     public function blogDetail($slug)
@@ -90,9 +94,10 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
+        $seo_link = 'contact-us';
         $data['section'] = PageSection::where('id', 6)->first();
         $data['settings'] = Setting::first();
-        return view('site.pages.contact', compact('nav', 'sub_nav', 'page_title'), $data);
+        return view('site.pages.contact', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
     public function faq()
@@ -100,8 +105,9 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
+        $seo_link = 'faq';
         $data['faqs'] = Faq::where('status', 1)->get();
-        return view('site.pages.faq', compact('nav', 'sub_nav', 'page_title'), $data);
+        return view('site.pages.faq', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
     public function cms($slug)
@@ -117,6 +123,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        return view('site.pages.404', compact('nav', 'sub_nav', 'page_title'));
+        $seo_link = '404';
+        return view('site.pages.404', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 }

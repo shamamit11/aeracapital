@@ -7,7 +7,7 @@
     <div class="as-menu-area text-center">
         <button class="as-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="{{route('home')}}"><img src="assets/img/logo.svg" alt="Aera Capital"></a>
+            <a href="{{route('home')}}"><img src="{{ asset('assets/site/img/logo.svg') }}" alt="Aera Capital"></a>
         </div>
         <div class="as-mobile-menu">
             <ul>
