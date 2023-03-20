@@ -6,9 +6,7 @@ $cta = Cta::where('id', 1)->first();
     <section class="bg-bottom-right position-relative" data-bg-src="{{asset('assets/site/img/bg/cta_bg_1.png')}}" data-bg-color="#323041">
         <div class="img-half img-left as-video2">
             <img src="{{@$cta->image}}" alt="{{@$cta->title}}">
-            @if(@$cta->video)
-                <a href="{{@$cta->video}}" class="play-btn popup-video"><i class="fas fa-play"></i></a>
-            @endif
+            <a href="{{@$cta->video}}" class="play-btn popup-video"><i class="fas fa-play"></i></a>
         </div>
         <div class="container">
             <div class="row justify-content-end">
@@ -22,7 +20,10 @@ $cta = Cta::where('id', 1)->first();
                 </div>
             </div>
         </div>
-        <div class="shape-mockup" data-bottom="0" data-right="0">
+        <div class="shape-mockup" style="right: 0px; bottom: 0px;">
             <div class="particle-1" id="particle-1"></div>
         </div>
+        {{-- <div class="shape-mockup" data-bottom="0" data-right="0">
+            <div class="particle-1" id="particle-1"></div>
+        </div> --}}
     </section>
