@@ -148,7 +148,7 @@
 
                                         <button type="submit" class="btn btn-primary  btn-loading">Submit</button>
 
-                                        <a href="{{route('admin-banner')}}" class="btn btn-danger btn-loading" style="margin-left:5px;">Cancel</a>
+                                        <a href="{{route('admin-banner')}}" class="btn btn-danger" style="margin-left:5px;">Cancel</a>
                                     </form>
                                 </div>
                             </div>
