@@ -26,7 +26,7 @@ class ServiceRequest extends ApiRequest
             'slug' => 'required|unique:services,slug,'.$this->id,
             'title' => 'required',
             'sub_title' => 'required',
-            'image_01' => 'required',
+            'image_01' => '',
             'image_02' => '',
             'image_03' => '',
             'image_04' => '',

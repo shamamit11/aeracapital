@@ -18,9 +18,11 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
-                        <div class="page-img">
-                            <img src="{{ $row->image_01 }}" alt="{{ $row->title }}">
-                        </div>
+                        @if($row->image_01)
+                            <div class="page-img">
+                                <img src="{{ $row->image_01 }}" alt="{{ $row->title }}">
+                            </div>
+                        @endif
                         <div class="page-content">
                             <h2 class="h3 page-title">{{ $row->sub_title }}</h2>
                             {!! $row->description !!}
