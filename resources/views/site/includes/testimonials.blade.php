@@ -3,7 +3,7 @@
         use App\Models\PageSection;
         use App\Models\Testimonial;
         $section = PageSection::where('id', 3)->first();
-        $testimonials = Testimonial::where('status', 1)->orderBy('order', 'asc')->limit(5)->get();
+        $testimonials = Testimonial::where('status', 1)->orderBy('order', 'asc')->limit(4)->get();
     @endphp
     <section class="overflow-hidden space" data-bg-src="{{asset('assets/site/img/bg/testi_bg_1.jpg')}}" data-overlay="overlay1" data-opacity="9">
         <div class="container z-index-common">
