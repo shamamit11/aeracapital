@@ -49,7 +49,7 @@ $clients = Client::where('status', 1)->get();
                     @foreach($clients as $client)
                         <div class="col-auto">
                             <div class="brand-box">
-                                <img src="{{ $client->image }}" alt="{{ $client->name }}">
+                                <img src="{{ $client->image }}" alt="{{ $client->name }}" height="80">
                             </div>
                         </div>
                     @endforeach
