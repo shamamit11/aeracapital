@@ -80,6 +80,7 @@
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
+                                    <li><a href="{{route('home')}}">Home</a></li>
                                     <li><a href="{{route('about')}}">About Us</a></li>
                                     <li><a href="{{route('service')}}">Services We Offer</a></li>
                                     {{-- <li><a href="{{route('blog')}}">Blogs</a></li> --}}
