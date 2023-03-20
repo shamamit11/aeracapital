@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', 'PageController@home')->name('home');
+Route::get('/', 'TestController@index');
+Route::get('/home', 'PageController@home')->name('home');
 Route::get('/about-us', 'PageController@about')->name('about');
 Route::get('/services', 'PageController@service')->name('service');
 Route::get('/service/{slug}', 'PageController@serviceDetail')->name('service-detail');
