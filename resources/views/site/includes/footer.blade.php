@@ -62,7 +62,7 @@
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-xxl-3 col-xl-4">
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">About Company</h3>
+                            <h3 class="widget_title">{!! @$section->title !!}</h3>
                             <div class="as-widget-about">
                                 <p class="about-text">{!! @$section->main_text !!}</p>
                                 <div class="as-social">
