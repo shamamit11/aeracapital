@@ -28,7 +28,8 @@
                                             <thead class="table-light">
                                                 <tr>
                                                     <td width="50">#</td>
-                                                    <td>Page Name</td>
+                                                    <td width="350">Page Name</td>
+                                                    <td>URL</td>
                                                     <td style="text-align:center" width="120">Action</td>
                                                 </tr>
                                             </thead>
@@ -37,6 +38,7 @@
                                                     <tr id="tr{{ $seo->id }}">
                                                         <td>{{ $count++ }}</td>
                                                         <td>{{ $seo->name }}</td>
+                                                        <td>{{ $seo->url }}</td>
                                                         <td style="text-align:center"><a
                                                                 href="{{ route('admin-seo-add', ['id=' . $seo->id]) }}"
                                                                 class="btn btn-sm btn-warning rounded-pill" title="Edit"

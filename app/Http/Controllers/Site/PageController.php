@@ -14,6 +14,7 @@ use App\Models\Blog;
 use App\Models\PageSection;
 use App\Models\Setting;
 use App\Models\Counter;
+use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -22,7 +23,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'home';
+        $seo_link = url()->current();
         return view('site.pages.home', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 
@@ -31,7 +32,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'about-us';
+        $seo_link = url()->current();
         $data['counters'] = Counter::limit(4)->get();
         return view('site.pages.about', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
@@ -51,7 +52,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'services';
+        $seo_link = url()->current();
         $data['services'] = Service::where('status', 1)->orderBy('order', 'asc')->get();
         $data['cta'] = Cta::where('id', 2)->first();
         $data['process'] = WorkProcess::orderBy('order', 'asc')->limit(4)->get();
@@ -74,7 +75,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'blogs';
+        $seo_link = url()->current();
         $data['blogs'] = Blog::where('status', 1)->orderBy('date', 'desc')->get();
         return view('site.blog.index', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
@@ -94,7 +95,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'contact-us';
+        $seo_link = url()->current();
         $data['section'] = PageSection::where('id', 6)->first();
         $data['settings'] = Setting::first();
         return view('site.pages.contact', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
@@ -105,7 +106,7 @@ class PageController extends Controller
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = 'faq';
+        $seo_link = url()->current();
         $data['faqs'] = Faq::where('status', 1)->get();
         return view('site.pages.faq', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
@@ -118,12 +119,13 @@ class PageController extends Controller
         return view('site.pages.cms', compact('nav'), $data);
     }
 
-    public function error404()
+    public function error404(Request $request)
     {
         $nav = '';
         $sub_nav = '';
         $page_title = '';
-        $seo_link = '404';
+        $seo_link = url()->current();
+        //$seo_link = '404';
         return view('site.pages.404', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 }

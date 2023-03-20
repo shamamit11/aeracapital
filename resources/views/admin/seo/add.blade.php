@@ -20,7 +20,7 @@
                                     <div class="error" id='error_name'></div>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label"> Url</label>
+                                    <label class="form-label"> URL</label>
                                     <input type="text" class="form-control" name="url" id="url"  value="{{old('url' , isset($row->url)? $row->url : '' )}}">
                                     <div class="error" id='error_url'></div>
                                 </div>
