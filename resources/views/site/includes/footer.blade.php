@@ -20,7 +20,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3">
                         <div class="footer-logo">
-                            <a href="home-startup-company.html"><img src="{{ asset('assets/site/img/logo-white.svg')}}" alt="Traga"></a>
+                            <a href="{{route('home')}}"><img src="{{ asset('assets/site/img/logo-white.svg')}}" alt="Aera Capital"></a>
                         </div>
                     </div>
                     <div class="col-xl-9">
