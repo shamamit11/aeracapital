@@ -2,6 +2,7 @@
     $(document).ready(function() {
         CKEDITOR.replace('description', {
             height: 400,
+            allowedContent : true,
             filebrowserImageBrowseUrl: '/file-manager/ckeditor'
         });
 

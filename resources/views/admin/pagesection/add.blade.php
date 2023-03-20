@@ -141,7 +141,6 @@
                                                 $image_link = (isset($row->list_icon) ? $row->list_icon : asset('assets/admin/images/icon.png'));
                                             @endphp
                                             <img src="{{ $image_link }}" id="list_icon_link" class="icon-holder">
-                    
                                         </div>
 
                                         <div class="row mb-3">

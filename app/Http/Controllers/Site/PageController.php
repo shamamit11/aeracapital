@@ -125,7 +125,6 @@ class PageController extends Controller
         $sub_nav = '';
         $page_title = '';
         $seo_link = url()->current();
-        //$seo_link = '404';
         return view('site.pages.404', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 }

@@ -3,6 +3,7 @@
         $('.select2').select2();
         CKEDITOR.replace('description', {
             height: 400,
+            allowedContent : true,
             filebrowserImageBrowseUrl: '/file-manager/ckeditor'
         });
         $('#name').on('change input', function(e) {
