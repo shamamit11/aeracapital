@@ -112,7 +112,7 @@
                                         <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{ $blog->title }}"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{ $blog->sub_title }}</a></h4>
+                                        <h4 class="post-title" style="margin:0; font-size: 14px;"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{ $blog->sub_title }}</a></h4>
                                         <div class="recent-post-meta">
                                             <a href="#"><i class="fal fa-calendar-days"></i>{{ $blog->date }}</a>
                                         </div>

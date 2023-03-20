@@ -27,7 +27,7 @@ $clients = Client::where('status', 1)->get();
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-calendar-days"></i>{{$blog->date}}</a>
                             </div>
-                            <h3 class="box-title"><a  href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h3>
+                            <h3 class="box-title"><a href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h3>
                             <div class="blog-bottom">
                                 <a href="#" class="author"> {{$blog->posted_by}}</a>
                                 <a  href="{{route('blog-detail', [$blog->slug])}}" class="line-btn">Read More<i
