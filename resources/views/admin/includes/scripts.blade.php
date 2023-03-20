@@ -11,3 +11,6 @@
 <script src="{{ asset('vendor/file-manager/js/file-manager.js') }}"></script>
 <script src="{{ asset('assets/admin/js/app.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/common.js') }}"></script>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
