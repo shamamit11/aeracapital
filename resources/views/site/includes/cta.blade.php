@@ -20,7 +20,7 @@ $cta = Cta::where('id', 1)->first();
                 </div>
             </div>
         </div>
-        <div class="shape-mockup" style="right: 0px; bottom: 0px;" data-bottom="0" data-right="0">
+        <div class="shape-mockup" data-bottom="0" data-right="0">
             <div class="particle-1" id="particle-1"></div>
         </div>
         {{-- <div class="shape-mockup" data-bottom="0" data-right="0">
