@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="shape-mockup" data-bottom="0" data-right="0">
+    <div class="shape-mockup" style="right: 0px; bottom: 0px; z-index:1">
         <div class="particle-1" id="particle-1"></div>
     </div>
 </section>
