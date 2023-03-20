@@ -14,6 +14,7 @@
                 <li><a href="{{route('home')}}">Home</a></li>
                 <li><a href="{{route('about')}}">About Us</a></li>
                 <li><a href="{{route('service')}}">Services</a></li>
+                @if(count($products)>0)
                 <li class="menu-item-has-children">
                     <a href="#">Products</a>
                     <ul class="sub-menu">
@@ -22,7 +23,9 @@
                         @endforeach
                     </ul>
                 </li>
+                @endif
                 {{-- <li><a href="{{route('blog')}}">Blog</a></li> --}}
+                <li><a href="{{route('faq')}}">FAQ</a></li>
                 <li><a href="{{route('contact')}}">Contact</a></li>
             </ul>
         </div>
