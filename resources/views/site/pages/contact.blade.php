@@ -18,7 +18,7 @@
         {!! @$settings->google_map !!}
     </div>
 
-    <div class="bg-smoke space" data-bg-src="{{asset('assets/site/img/bg/contact_bg_1.png')}}">
+    <div class="bg-smoke space">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
