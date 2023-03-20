@@ -15,20 +15,20 @@
                 <div class="col-auto d-none d-lg-block">
                     <div class="header-links">
                         <ul>
-                            <li><i class="fas fa-map-location"></i>{{ $settings->address }}</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:{{ $settings->phone }}">{{ $settings->phone }}</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:{{ $settings->email }}">{{ $settings->email }}</a></li>
+                            <li><i class="fas fa-map-location"></i>{{ @$settings->address }}</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:{{ @$settings->phone }}">{{ @$settings->phone }}</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:{{ @$settings->email }}">{{ @$settings->email }}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="header-social">
                         <span class="social-title">Follow Us On : </span>
-                        <a href="{{ $social_links->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="{{ $social_links->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="{{ $social_links->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="{{ $social_links->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="{{ $social_links->youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="{{ @$social_links->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="{{ @$social_links->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="{{ @$social_links->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="{{ @$social_links->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="{{ @$social_links->youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>

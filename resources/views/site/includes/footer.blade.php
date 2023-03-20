@@ -66,11 +66,11 @@
                             <div class="as-widget-about">
                                 <p class="about-text">{!! @$section->main_text !!}</p>
                                 <div class="as-social">
-                                    <a href="{{ $social_links->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="{{ $social_links->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    <a href="{{ $social_links->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="{{ $social_links->whatsapp }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                    <a href="{{ $social_links->youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="{{ @$social_links->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="{{ @$social_links->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="{{ @$social_links->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="{{ @$social_links->whatsapp }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="{{ @$social_links->youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
