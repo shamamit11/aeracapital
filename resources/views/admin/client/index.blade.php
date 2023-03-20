@@ -41,7 +41,7 @@
                                                         <td>{{ $count++ }}</td>
                                                         <td> <img
                                                                 src="{{ $client->image }}"
-                                                                height="80"></td>
+                                                                height="30"></td>
                                                         <td>{{ $client->name }}</td>
                                                         <td>{{ $client->order }}</td>
                                                         <td><label class="switch">
