@@ -19,10 +19,11 @@ $cta = Cta::where('id', 1)->first();
                     <a href="{{@$cta->cta_link}}" class="as-btn style3">{{@$cta->cta_text}}<i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
+            <div class="shape-mockup" data-bottom="0" data-right="0">
+                <div class="particle-1" id="particle-1"></div>
+            </div>
         </div>
-        <div class="shape-mockup" data-bottom="0" data-right="0">
-            <div class="particle-1" id="particle-1"></div>
-        </div>
+        
         {{-- <div class="shape-mockup" data-bottom="0" data-right="0">
             <div class="particle-1" id="particle-1"></div>
         </div> --}}
