@@ -1,5 +1,7 @@
 <script>
 $(document).ready(function() {
+    $('#login_error').addClass('d-none');
+    
     $("#frm_login").submit(function(e) {
         e.preventDefault();
         $('.btn-loading').prop('disabled', true)
