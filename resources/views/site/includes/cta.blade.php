@@ -3,7 +3,7 @@ use App\Models\Cta;
 $cta = Cta::where('id', 1)->first();
 @endphp
 
-    <section class="bg-bottom-right position-relative" data-bg-src="{{asset('assets/site/img/bg/cta_bg_1.png')}}" data-bg-color="#323041">
+    <section class="bg-bottom-right position-relative shape-mockup-wrap" data-bg-src="{{asset('assets/site/img/bg/cta_bg_1.png')}}" data-bg-color="#323041">
         <div class="img-half img-left as-video2">
             <img src="{{@$cta->image}}" alt="{{@$cta->title}}">
             <a href="{{@$cta->video}}" class="play-btn popup-video"><i class="fas fa-play"></i></a>
