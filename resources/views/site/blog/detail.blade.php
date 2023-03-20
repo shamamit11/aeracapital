@@ -6,7 +6,7 @@
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">{{$row->title}}</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="./">Home</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
                     <li>{{$row->title}}</li>
                 </ul>
             </div>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a class="author" href="#"> {{$row->posted_by}}</a>
+                                <a class="author" href="#">Posted By: {{$row->posted_by}}</a>
                             </div>
                             <h2 class="blog-title">{{$row->title}}</h2>
                             {!!$row->description!!}
@@ -41,7 +41,7 @@
                                             <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{$blog->title}}"></a>
                                         </div>
                                         <div class="media-body">
-                                            <h4 class="post-title"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h4>
+                                            <h4 class="post-title" style="margin:0; font-size: 16px;"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h4>
                                             <div class="recent-post-meta">
                                                 <a href="#"><i class="fal fa-calendar-days"></i>{{$blog->date}}</a>
                                             </div>

@@ -29,7 +29,7 @@ $clients = Client::where('status', 1)->get();
                             </div>
                             <h3 class="box-title"><a href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h3>
                             <div class="blog-bottom">
-                                <a href="#" class="author"> {{$blog->posted_by}}</a>
+                                <a href="#" class="author">By: {{$blog->posted_by}}</a>
                                 <a  href="{{route('blog-detail', [$blog->slug])}}" class="line-btn">Read More<i
                                         class="fas fa-arrow-right"></i></a>
                             </div>
