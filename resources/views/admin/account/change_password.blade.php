@@ -35,7 +35,7 @@
                                                 <div class="error" id='error_confirm_password'></div>
                                             </div>
 
-                                            <div class="col-4 mb-3 d-grid text-center">
+                                            <div class="col-5 mb-3 d-grid text-center">
                                                 <button class="btn btn-primary btn-loading" type="submit"> Change
                                                     Password</button>
                                             </div>

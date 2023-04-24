@@ -76,7 +76,6 @@
                                             @endphp
                                             <img src="{{ $main_image_link }}" id="main_image_link" class="image-holder">
                                         </div>
-                   
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Status</label>
