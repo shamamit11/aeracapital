@@ -2,6 +2,7 @@
     use App\Models\Setting;
     use App\Models\Seo;
     $settings = Setting::first();
+    $currenturl = url()->full();
 
     if(isset($row) && !empty($row)) { 
         $meta_title = (isset($row->meta_title) && !empty($row->meta_title)) ? $row->meta_title : @$settings->meta_title;
@@ -34,10 +35,19 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ $meta_title }}</title>
-    <meta property="og:title" content="{{ $meta_title }}" />
     <meta name="description" content="{{  $meta_description }}" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="canonical" href="{{$currenturl}}" />
+    <meta property="og:title" content="{{ $meta_title }}" />
     <meta property="og:description" content="{{  $meta_description }}" />
-    <meta name="robots" content="INDEX,FOLLOW">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="page" />
+    <meta property="og:url" content="{{$currenturl}}" />
+    <meta property="og:site_name" content="Aera Capital" />
+    <meta property="og:image" content="{{ asset('assets/site/img/logo.svg') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AeraCapital" />
+    <meta name="twitter:creator" content="@AeraCapital" />
     <meta name="Googlebot" content="follow">
     @if(@$settings->google_site_verification )
         <meta name="google-site-verification" content="{{ @$settings->google_site_verification }}" />
