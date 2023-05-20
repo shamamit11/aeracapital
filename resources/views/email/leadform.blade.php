@@ -13,9 +13,9 @@
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
             <tr>
                 <td align="center" valign="top">
-                    {{-- <div id="template_header_image" style="margin-bottom:25px;">
+                    <div id="template_header_image" style="margin-bottom:25px;">
                         <img src="{{ $logo }}" alt="Aera Capital" style="height: 55px;">
-                    </div> --}}
+                    </div>
                     <table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container"
                         style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
                         <tr>
