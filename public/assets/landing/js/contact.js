@@ -12,8 +12,7 @@ jQuery(document).ready(function () {
       success: function (data) {
         $('.batton').prop('disabled', false);
         $('.batton').html('Book a Free Consultation');
-        jQuery('#contact-form')[0].reset();
-        
+       
         var name = jQuery('input[name="contact_name"]').val();
         var email = jQuery('input[name="email_address"]').val();
         var phone = jQuery('input[name="mobile_no"]').val();
@@ -26,6 +25,7 @@ jQuery(document).ready(function () {
         +"*Service Required :* "+service;
 
         window.open(url,'_blank').focus();
+        jQuery('#contact-form')[0].reset();
         // swal({
         //   title: "Thank You!",
         //   text: "Your request has been submitted successfully. We will contact to you soon.",
