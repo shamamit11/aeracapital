@@ -121,6 +121,16 @@
                                         <textarea class="form-control" name="meta_description" rows="5" maxlength="200">{{ old('meta_description', isset($row->meta_description) ? $row->meta_description : '') }}</textarea>
                                     </div>
                                     <div class="mb-3">
+                                        <label class="form-label"> Service Schema</label>
+                                        <textarea class="form-control" name="service_schema" id="service_schema" rows="10">{{ old('service_schema', isset($row->service_schema) ? $row->service_schema : '') }}</textarea>
+                                        <div class="error" id='error_service_schema'></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label"> Faq Schema</label>
+                                        <textarea class="form-control" name="faq_schema" id="faq_schema" rows="10">{{ old('faq_schema', isset($row->faq_schema) ? $row->faq_schema : '') }}</textarea>
+                                        <div class="error" id='error_faq_schema'></div>
+                                    </div>
+                                    <div class="mb-3">
                                         <label class="form-label">Slug</label>
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="slug" id="slug"

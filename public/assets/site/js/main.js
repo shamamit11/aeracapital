@@ -401,7 +401,7 @@
     var invalidCls = "is-invalid";
     var $email = '[name="email"]';
     var $validation =
-        '[name="name"],[name="email"],[name="subject"],[name="number"],[name="message"]'; // Must be use (,) without any space
+        '[name="name"],[name="email"],[name="service"],[name="mobile_no"],[name="remarks"]'; // Must be use (,) without any space
     var formMessages = $(".form-messages");
 
     function sendContact() {
@@ -409,6 +409,9 @@
         var valid;
         valid = validateContact();
         if (valid) {
+            $('.as-btn').html(
+                '<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span> Loading...'
+            );
             jQuery
                 .ajax({
                     url: $(form).attr("action"),
@@ -428,6 +431,7 @@
                             form +
                             " textarea"
                     ).val("");
+                    $('.as-btn').html('Send Message<i class="fa-regular fa-arrow-right ms-2"></i>');
                 })
                 .fail(function (data) {
                     // Make sure that the formMessages div has the 'error' class.
@@ -441,6 +445,7 @@
                             "Oops! An error occured and your message could not be sent."
                         );
                     }
+                    $('.as-btn').html('Send Message<i class="fa-regular fa-arrow-right ms-2"></i>');
                 });
         }
     }

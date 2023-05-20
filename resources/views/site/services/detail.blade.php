@@ -54,3 +54,12 @@
         </div>
     </section>
 @endsection
+@section('footer-scripts')
+    @if(@$row->service_schema )
+        {!!@$row->service_schema!!}
+    @endif  
+
+    @if(@$row->faq_schema )
+        {!!@$row->faq_schema!!}
+    @endif   
+@endsection

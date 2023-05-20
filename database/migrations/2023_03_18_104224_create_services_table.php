@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('image_05')->nullable();
             $table->longText('description')->nullable();
             $table->text('sub_description')->nullable();
+            $table->text('service_schema')->nullable();
+            $table->text('faq_schema')->nullable();
             $table->string('icon')->nullable();
             $table->integer('order')->nullable();
             $table->boolean('status')->nullable()->default(1)->comment('0 = hide, 1 = show');

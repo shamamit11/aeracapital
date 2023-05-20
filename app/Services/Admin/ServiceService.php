@@ -66,6 +66,8 @@ class ServiceService
             $service->sub_title = $request['sub_title'];
             $service->image_01 = $request['image_01'];
             $service->sub_description = $request['sub_description'];
+            $service->service_schema = $request['service_schema'];
+            $service->faq_schema = $request['faq_schema'];
             $service->description = $request['description'];
             $service->icon = $request['icon'];
             $service->order = $request['order'];
