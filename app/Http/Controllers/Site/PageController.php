@@ -140,6 +140,7 @@ class PageController extends Controller
 
     public function landingFormAction(Request $request) {
         $emailData = [
+            'logo' => asset('assets/landing/img/favicon.svg'),
             'contact_name' => $request['contact_name'],
             'email_address' => $request['email_address'],
             'mobile_no' => $request['mobile_no'],
@@ -155,6 +156,7 @@ class PageController extends Controller
 
     public function contactFormAction(Request $request) {
         $emailData = [
+            'logo' => asset('assets/landing/img/favicon.svg'),
             'name' => $request['name'],
             'email' => $request['email'],
             'mobile_no' => $request['mobile_no'],
