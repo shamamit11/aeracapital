@@ -27,7 +27,8 @@
                         <h2 class="sec-title">{!! @$section->title !!}</h2>
                         <p class="sec-text">{!! @$section->main_text !!}</p>
                     </div>
-                    <form action="mail.php" method="POST" class="contact-form ajax-contact">
+                    <form action="{{route('contact-form-action')}}" method="POST" class="contact-form ajax-contact" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
@@ -38,28 +39,33 @@
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="form-group col-md-6">
-                                <select name="subject" id="subject" class="form-select">
+                                <select name="service" id="service" class="form-select">
                                     <option value="" disabled selected hidden>Select Subject</option>
-                                    <option value="Web Development">Web Development</option>
-                                    <option value="Brand Marketing">Brand Marketing</option>
-                                    <option value="UI/UX Designing">UI/UX Designing</option>
-                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="Custom Web Development">Custom Web Development</option>
+                                    <option value="Mobile App Development">Mobile App Development</option>
+                                    <option value="E-commerce Solutions">E-commerce Solutions</option>
+                                    <option value="Digital Marketing Solutions">Digital Marketing Solutions</option>
+                                    <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                    <option value="CRM / ERP Solutions">CRM / ERP Solutions</option>
                                 </select>
                                 <i class="fal fa-chevron-down"></i>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                <input type="tel" class="form-control" name="mobile_no" id="mobile_no" placeholder="Mobile Number">
                                 <i class="fal fa-phone"></i>
                             </div>
                             <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea>
+                                <textarea name="remarks" id="remarks" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea>
                                 <i class="fal fa-comment"></i>
                             </div>
                             <div class="form-btn text-xl-start text-center col-12">
                                 <button class="as-btn">Send Message<i class="fa-regular fa-arrow-right ms-2"></i></button>
                             </div>
                         </div>
-                        <p class="form-messages mb-0 mt-3"></p>
+                        <strong>
+                            <p class="form-messages mb-0 mt-3"></p>
+                        </strong>
                     </form>
                 </div>
             </div>

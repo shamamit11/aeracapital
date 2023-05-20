@@ -32,6 +32,8 @@ class ServiceRequest extends ApiRequest
             'image_04' => '',
             'image_05' => '',
             'sub_description' => '',
+            'service_schema' => '',
+            'faq_schema' => '',
             'description' => 'required',
             'icon' => 'required',
             'order' => 'required|integer',

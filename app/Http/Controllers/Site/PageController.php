@@ -15,6 +15,7 @@ use App\Models\PageSection;
 use App\Models\Setting;
 use App\Models\Counter;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -126,5 +127,45 @@ class PageController extends Controller
         $page_title = '';
         $seo_link = url()->current();
         return view('site.pages.404', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
+    }
+
+    public function digitalTransformation()
+    {
+        $nav = '';
+        $sub_nav = '';
+        $page_title = '';
+        return view('site.landing.digital', compact('nav', 'sub_nav', 'page_title'));
+    }
+
+
+    public function landingFormAction(Request $request) {
+        $emailData = [
+            'contact_name' => $request['contact_name'],
+            'email_address' => $request['email_address'],
+            'mobile_no' => $request['mobile_no'],
+            'service' => $request['service'],
+        ];
+        Mail::send('email.leadform', $emailData, function ($message) use ($request) {
+            $message->to('amit@aera-capital.com');
+            $message->subject('New Lead Submission !!');
+        });
+        $message = "success";
+        return $message;
+    }
+
+    public function contactFormAction(Request $request) {
+        $emailData = [
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'mobile_no' => $request['mobile_no'],
+            'remarks' => $request['remarks'],
+            'service' => $request['service'],
+        ];
+        Mail::send('email.contactform', $emailData, function ($message) use ($request) {
+            $message->to('amit@aera-capital.com');
+            $message->subject('New Contact Form Submission !!');
+        });
+        $message = "Contact Form was submitted Successfully !! We will get back you shortly !!!";
+        return $message;
     }
 }

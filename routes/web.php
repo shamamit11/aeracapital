@@ -21,6 +21,11 @@ Route::get('/product/{slug}', 'PageController@productDetail')->name('product-det
 Route::get('/blogs', 'PageController@blog')->name('blog');
 Route::get('/blog/{slug}', 'PageController@blogDetail')->name('blog-detail');
 Route::get('/contact-us', 'PageController@contact')->name('contact');
+Route::post('/contact-form-action', 'PageController@contactFormAction')->name('contact-form-action');
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::get('/page/{slug}', 'PageController@cms')->name('page');
 Route::get('/404', 'PageController@error404')->name('404');
+
+//landing page
+Route::get('/digital-transformation', 'PageController@digitalTransformation')->name('digital-transformation');
+Route::post('/landing-form-action', 'PageController@landingFormAction')->name('landing-form-action');
