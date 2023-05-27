@@ -26,7 +26,7 @@
                             </div>
                             <h3 class="box-title"><a href="{{route('service', [$service->slug])}}">{{ $service->title }}</a></h3>
                             <p class="service-card_text">{{ $service->sub_description }}</p>
-                            <a href="{{route('service-detail', [$service->slug])}}" class="as-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="{{route('service-detail', [$service->slug])}}" class="as-btn">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
                                 <img src="{{asset('assets/site/img/bg/service_card_bg.png')}}" alt="bg">
                             </div>

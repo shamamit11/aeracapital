@@ -60,7 +60,7 @@
                                 <i class="fal fa-comment"></i>
                             </div>
                             <div class="form-btn text-xl-start text-center col-12">
-                                <button class="as-btn">Send Message<i class="fa-regular fa-arrow-right ms-2"></i></button>
+                                <button class="as-btn">Send Message<i class="fa fa-arrow-right ms-2"></i></button>
                             </div>
                         </div>
                         <strong>

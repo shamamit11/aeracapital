@@ -21,9 +21,9 @@
                         <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.7s">{{ $ban->main_text }}</p>
                         <div class="btn-group" data-ani="slideinleft" data-ani-delay="0.9s">
                             <a href="{{ $ban->cta_01_link }}" class="as-btn style3">{{ $ban->cta_01_text }}<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    class="fa fa-arrow-right ms-2"></i></a>
                             <a href="{{ $ban->cta_02_link }}" class="as-btn style2">{{ $ban->cta_02_text }}<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>

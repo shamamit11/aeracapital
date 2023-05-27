@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="pb-120">
+    <div class="">
         @include('site.includes.feature')
     </div>
 @endsection

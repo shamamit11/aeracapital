@@ -18,7 +18,7 @@
                 </div>
                 <p class="mt-n2 mb-30 text-white">{!! @$cta->main_text !!}</p>
                 <a href="{{ @$cta->cta_link }}" class="as-btn style3">{{ @$cta->cta_text }}<i
-                        class="fa-regular fa-arrow-right ms-2"></i></a>
+                        class="fa fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </div>
