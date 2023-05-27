@@ -21,16 +21,16 @@
                     <div class="two-column">
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> {{ @$section->list_01_text }}</li>
-                                <li><i class="far fa-check"></i> {{ @$section->list_02_text }}</li>
-                                <li><i class="far fa-check"></i> {{ @$section->list_03_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_01_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_02_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_03_text }}</li>
                             </ul>
                         </div>
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> {{ @$section->list_04_text }}</li>
-                                <li><i class="far fa-check"></i> {{ @$section->list_05_text }}</li>
-                                <li><i class="far fa-check"></i> {{ @$section->list_06_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_04_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_05_text }}</li>
+                                <li><i class="fa fa-check"></i> {{ @$section->list_06_text }}</li>
                             </ul>
                         </div>
                     </div>

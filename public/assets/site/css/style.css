@@ -3787,7 +3787,8 @@ a.text-theme:hover,
 }
 
 .footer-widget.widget_meta a:before, .footer-widget.widget_pages a:before, .footer-widget.widget_archive a:before, .footer-widget.widget_categories a:before, .footer-widget.widget_nav_menu a:before {
-  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  content: "\f054" !important;
   font-weight: 600;
   left: 0;
   top: 2px;
@@ -3850,6 +3851,16 @@ a.text-theme:hover,
 
 .footer-widget .recent-post .recent-post-meta a:hover i {
   color: var(--theme-color);
+}
+
+.fa-calendar-alt:before, .fa-calendar-days:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f073" !important;
+}
+
+.scroll-top:after {
+  font-family: "Font Awesome 5 Free" !important;
+  content: "\f35b" !important;
 }
 
 .as-widget-about .about-logo {
