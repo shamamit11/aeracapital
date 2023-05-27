@@ -14,6 +14,26 @@ $settings = Setting::first();
                         <h2 class="sec-title">{!! @$section->title !!}</h2>
                     </div>
                     <p class="mt-n2 mb-30 text-xl-start text-center">{!! @$section->main_text !!}</p>
+                    <div class="contact-feature-wrap">
+                        <div class="contact-feature">
+                            <div class="icon-btn">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="contact-feature_label">Call Us On:</p>
+                                <a href="tel:{{ @$settings->phone }}" class="contact-feature_link">{{ @$settings->phone }}</a>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="icon-btn">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="contact-feature_label">Quick Mail Us:</p>
+                                <a href="mailto:{{ @$settings->email }}" class="contact-feature_link" style="font-size: 15px">{{ @$settings->email }}</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-6 ps-xl-4">
                     <h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>

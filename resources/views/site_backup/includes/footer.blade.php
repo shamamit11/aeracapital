@@ -20,13 +20,13 @@
         <div class="logo-bg"></div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-2">
+                <div class="col-xl-3">
                     <div class="footer-logo">
                         <a href="{{ route('home') }}"><img src="{{ asset('assets/site/img/logo-white.svg') }}"
                                 alt="Aera Capital"></a>
                     </div>
                 </div>
-                <div class="col-xl-10">
+                <div class="col-xl-9">
                     <div class="footer-contact-wrap">
                         <div class="footer-contact">
                             <div class="footer-contact_icon">
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-md-6 col-xl-auto">
+                <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">PRODUCTS</h3>
                         <div class="menu-all-pages-container">
@@ -112,7 +112,7 @@
                             </ul>
                         </div>
                     </div>
-                </div> --}}
+                </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
                         <h3 class="widget_title">Recent Posts</h3>
@@ -162,6 +162,12 @@
             </div>
         </div>
     </div>
+    {{-- <div class="shape-left">
+        <img src="{{ asset('assets/site/img/shape/footer_shape_2.svg') }}" alt="shape">
+    </div> --}}
+    {{-- <div class="shape-right">
+        <div class="particle-1" id="particle-5"></div>
+    </div> --}}
 </footer>
 
 <!-- Scroll To Top -->

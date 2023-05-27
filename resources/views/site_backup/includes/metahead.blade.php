@@ -81,3 +81,11 @@
 </head>
 
 <body>
+    {{-- <div class="preloader ">
+        <!-- <button class="as-btn style3 preloaderCls">Cancel Preloader </button> -->
+        <div class="preloader-inner">
+            <span class="loader">
+                <img src="{{ asset('assets/site/img/theme-img/preloader.svg') }}" alt="preloader">
+            </span>
+        </div>
+    </div> --}}

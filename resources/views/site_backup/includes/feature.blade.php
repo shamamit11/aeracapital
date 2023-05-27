@@ -2,7 +2,7 @@
     use App\Models\PageSection;
     $section = PageSection::where('id', 2)->first();
 @endphp
-    <div class="space" data-bg-src="{{asset('assets/site/img/bg/why_bg_1.png')}}">
+    <div class="space-top" data-bg-src="{{asset('assets/site/img/bg/why_bg_1.png')}}">
         <div class="container">
             <div class="row align-items-center flex-row-reverse">
                 <div class="col-xxl-7 col-xl-6 mb-30 mb-xl-0">

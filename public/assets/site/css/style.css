@@ -100,8 +100,8 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #E0E0E0;
-  --title-font: 'Barlow', sans-serif;
-  --body-font: 'Roboto', sans-serif;
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
   --container-gutters: 24px;
@@ -6240,7 +6240,7 @@ ul.comment-list .as-comment-item:first-child > .as-post-comment {
 }
 
 .hero-title {
-  font-size: 74px;
+  font-size: 65px;
   font-weight: bold;
   line-height: 1.135;
   margin-bottom: 0;
