@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-auto">
                     <div class="sec-btn">
-                        <a href="project.html" class="as-btn">VIEW ALL PORJECTS<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="project.html" class="as-btn">VIEW ALL PORJECTS<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div> <!-- / Title row -->

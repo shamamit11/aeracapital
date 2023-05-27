@@ -431,7 +431,7 @@
                             form +
                             " textarea"
                     ).val("");
-                    $('.as-btn').html('Send Message<i class="fa-regular fa-arrow-right ms-2"></i>');
+                    $('.as-btn').html('Send Message<i class="fa fa-arrow-right ms-2"></i>');
                 })
                 .fail(function (data) {
                     // Make sure that the formMessages div has the 'error' class.
@@ -445,7 +445,7 @@
                             "Oops! An error occured and your message could not be sent."
                         );
                     }
-                    $('.as-btn').html('Send Message<i class="fa-regular fa-arrow-right ms-2"></i>');
+                    $('.as-btn').html('Send Message<i class="fa fa-arrow-right ms-2"></i>');
                 });
         }
     }

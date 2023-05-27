@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="btn-group">
-                            {{-- <a href="{{ route('about') }}" class="as-btn">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a> --}}
+                            {{-- <a href="{{ route('about') }}" class="as-btn">DISCOVER MORE<i class="fa fa-arrow-right ms-2"></i></a> --}}
                             <div class="call-btn">
                                 <div class="play-btn">
                                     <i class="fas fa-phone"></i>
