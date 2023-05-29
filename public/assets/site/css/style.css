@@ -5177,11 +5177,10 @@ a.text-theme:hover,
 }
 
 .breadcumb-menu li:after {
-  content: "\f324";
-  font-family: "Font Awesome 5 Free" !important;
+  content: "/" !important;
   position: relative;
   margin-left: 10px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   color: var(--white-color);
   font-family: var(--icon-font);
