@@ -54,7 +54,7 @@
                             </div>
                             <div class="media-body">
                                 <span class="footer-contact_text">Visit Location:</span>
-                                <a href="contact.php" class="footer-contact_link">{{ @$settings->address }}</a>
+                                <a href="{{route('contact')}}" class="footer-contact_link">{{ @$settings->address }}</a>
                             </div>
                         </div>
                     </div>
