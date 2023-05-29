@@ -108,7 +108,7 @@ class PageController extends Controller
         $sub_nav = '';
         $page_title = '';
         $seo_link = url()->current();
-        $data['faqs'] = Faq::where('status', 1)->get();
+        $data['faqs'] = Faq::where([['status', 1]])->orderBy('order', 'asc')->get();
         return view('site.pages.faq', compact('nav', 'sub_nav', 'page_title', 'seo_link'), $data);
     }
 
