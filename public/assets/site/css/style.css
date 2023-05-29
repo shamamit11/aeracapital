@@ -2904,6 +2904,7 @@ a.text-theme:hover,
 .widget_archive a::before,
 .widget_categories a::before {
   content: "\f061";
+  font-family: "Font Awesome 5 Free" !important;
   position: absolute;
   right: 25px;
   top: 17px;
@@ -5177,6 +5178,7 @@ a.text-theme:hover,
 
 .breadcumb-menu li:after {
   content: "\f324";
+  font-family: "Font Awesome 5 Free" !important;
   position: relative;
   margin-left: 10px;
   font-weight: 500;
@@ -12442,6 +12444,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .accordion-card .accordion-button:not(.collapsed):after {
   content: '\f068';
+  font-family: "Font Awesome 5 Free" !important;
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
