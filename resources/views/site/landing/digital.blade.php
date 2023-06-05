@@ -82,7 +82,7 @@
                             We are here to help your business with all its digital transformation needs.</p>
                         <div class="video">
                             <div class="play-button">
-                                <a data-fancybox="" href="https://www.youtube.com/watch?v=1La4QzGeaaQ">
+                                <a data-fancybox="" href="https://www.youtube.com/watch?v=g8cAbviBPvI">
                                     <i>
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="56"
@@ -281,6 +281,12 @@
             <?= date('Y') ?> © Aera Capital - Custom Web Development Company in Dubai
         </div>
     </div>
+
+    <a href="https://api.whatsapp.com/send?phone=97145299497&text=Hello"
+    class="float" target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+</a>
+
     <!-- jQuery -->
     <script src="{{ asset('assets/landing/js/jquery-3.6.0.min.js') }}"></script>
     <!-- Bootstrap Js -->
