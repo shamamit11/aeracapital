@@ -50,7 +50,7 @@
     <a href="https://api.whatsapp.com/send?phone=97145299497&text=Hello" class="float" target="_blank">
         <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
-    
+
     <header id="">
         <div class="container">
             <div class="nav">
@@ -297,6 +297,6 @@
     <!-- Email Js -->
     <script src="{{ asset('assets/landing/js/sweetalert.min.js') }}"></script>
     <script src="{{ asset('assets/landing/js/contact.js') }}"></script>
-    <script src="{{ asset('assets/site/js/main.js') }}"></script>
+    {{-- <script src="{{ asset('assets/site/js/main.js') }}"></script> --}}
 
 </body>
