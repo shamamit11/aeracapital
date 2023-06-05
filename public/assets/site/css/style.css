@@ -1151,13 +1151,13 @@ textarea.is-invalid {
 }
 
 .as-mobile-menu ul li a:before {
-  content: '\f105';
-  font-family: var(--icon-font);
+  /* content: '\f105';
+  font-family: "Font Awesome 5 Free" !important;
   position: absolute;
   left: 0;
   top: 12px;
   margin-right: 10px;
-  display: inline-block;
+  display: inline-block; */
 }
 
 .as-mobile-menu ul li.as-active > a {

@@ -147,7 +147,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <?php echo date('Y'); ?> <a
+                    <p class="copyright-text">Copyright © <?php echo date('Y'); ?> <a
                             href="{{ @$settings->vat_no }}">{{ @$settings->business_name }}</a>. All Rights Reserved.
                     </p>
                 </div>
