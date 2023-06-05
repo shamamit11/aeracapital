@@ -66,7 +66,7 @@
                             </ul>
                         </nav>
                         <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
-                                class="far fa-bars"></i></button>
+                                class="fa fa-bars"></i></button>
                     </div>
                 </div>
             </div>
