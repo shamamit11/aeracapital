@@ -45,6 +45,12 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W278L39" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+
+    <a href="https://api.whatsapp.com/send?phone=97145299497&text=Hello" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+    
     <header id="">
         <div class="container">
             <div class="nav">
@@ -281,11 +287,6 @@
             <?= date('Y') ?> © Aera Capital - Custom Web Development Company in Dubai
         </div>
     </div>
-
-    <a href="https://api.whatsapp.com/send?phone=97145299497&text=Hello"
-    class="float" target="_blank">
-    <i class="fa-brands fa-whatsapp my-float"></i>
-</a>
 
     <!-- jQuery -->
     <script src="{{ asset('assets/landing/js/jquery-3.6.0.min.js') }}"></script>
