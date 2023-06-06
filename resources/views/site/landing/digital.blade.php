@@ -5,6 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AERA Capital - Digital Transformation Service Dubai</title>
+    <meta name="description" content="Aera Capital offers comprehensive digital transformation services in Dubai, empowering businesses with cutting-edge technologies to drive growth and stay ahead in the digital era." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://aera-capital.com/service/website-design-development" />
+    <meta property="og:title" content="AERA Capital - Digital Transformation Service Dubai" />
+    <meta property="og:description" content="Aera Capital offers comprehensive digital transformation services in Dubai, empowering businesses with cutting-edge technologies to drive growth and stay ahead in the digital era." />
+    <meta property="og:locale" content="en_AE" />
+    <meta property="og:type" content="page" />
+    <meta property="og:url" content="https://aera-capital.com/digital-transformation" />
+    <meta property="og:site_name" content="Aera Capital" />
+    <meta property="og:image" content="https://aera-capital.com/assets/site/img/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AeraCapital" />
+    <meta name="twitter:creator" content="@AeraCapital" />
+    <meta name="Googlebot" content="follow">
+    <meta name="google-site-verification" content="ggrlQZe8c1dUv7HdZFw4TqhO4VoxEFXnagk_gPY_Q5Q" />
+
     <link rel="icon" href="{{ asset('assets/landing/img/favicon.svg') }}">
 
     <!-- CSS only -->

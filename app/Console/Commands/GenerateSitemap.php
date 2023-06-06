@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Blog;
+use App\Models\LandingPage;
 use App\Models\Product;
 use App\Models\Service;
 use Illuminate\Console\Command;
@@ -60,6 +61,14 @@ class GenerateSitemap extends Command
         Blog::get()->each(function (Blog $blog) use ($aera_sitemap) {
             $aera_sitemap->add(
                 Url::create("/blog/{$blog->slug}")
+                    ->setPriority(0.9)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+            );
+        });
+
+        LandingPage::get()->each(function (LandingPage $landingPage) use ($aera_sitemap) {
+            $aera_sitemap->add(
+                Url::create("/{$landingPage->slug}")
                     ->setPriority(0.9)
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
             );

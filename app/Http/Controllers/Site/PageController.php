@@ -12,6 +12,7 @@ use App\Models\Service;
 use App\Models\WorkProcess;
 use App\Models\Blog;
 use App\Models\PageSection;
+use App\Models\LandingPage;
 use App\Models\Setting;
 use App\Models\Counter;
 use Illuminate\Http\Request;
@@ -19,6 +20,11 @@ use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
+
+    public function admin()
+    {
+        return redirect()->route('admin-dashboard');
+    }
     public function home()
     {
         $nav = '';
@@ -129,6 +135,18 @@ class PageController extends Controller
         return view('site.pages.404', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 
+    public function landingPage($slug)
+    {
+        $nav = '';
+        $landing = LandingPage::where([['slug', $slug], ['status', 1]])->first();
+        if($landing) {
+            $data['landing'] = LandingPage::where('slug', $slug)->first();
+            return view('site.landing.index', compact('nav'), $data);
+        } else {
+            return redirect()->route('404');
+        }
+    }
+
     public function digitalTransformation()
     {
         $nav = '';
@@ -144,10 +162,12 @@ class PageController extends Controller
             'contact_name' => $request['contact_name'],
             'email_address' => $request['email_address'],
             'mobile_no' => $request['mobile_no'],
-            'service' => $request['service'],
+            'service' => $request['service'] ? $request['service'] : '',
+            'remarks' => $request['message'] ? $request['message'] : '',
+            'slug' => $request['slug'] ? $request['slug'] : '',
         ];
         Mail::send('email.leadform', $emailData, function ($message) use ($request) {
-            $message->to('amit@aera-capital.com');
+            $message->to('info@aera-capital.com');
             $message->subject('New Lead Submission !!');
         });
         $message = "success";
@@ -164,7 +184,7 @@ class PageController extends Controller
             'service' => $request['service'],
         ];
         Mail::send('email.contactform', $emailData, function ($message) use ($request) {
-            $message->to('amit@aera-capital.com');
+            $message->to('info@aera-capital.com');
             $message->subject('New Contact Form Submission !!');
         });
         $message = "Contact Form was submitted Successfully !! We will get back you shortly !!!";

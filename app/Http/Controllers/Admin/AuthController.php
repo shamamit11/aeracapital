@@ -22,6 +22,10 @@ class AuthController extends Controller
     public function login()
     {
         $page_title = 'Login';
+        $admin = Auth::guard('admin')->user();
+        if($admin) {
+            return redirect()->route('admin-dashboard');
+        }
         return view('admin.auth.login', compact('page_title'));
     }
 
@@ -33,6 +37,10 @@ class AuthController extends Controller
     public function forgotPassword()
     {
         $page_title = 'Forgot Password';
+        $admin = Auth::guard('admin')->user();
+        if($admin) {
+            return redirect()->route('admin-dashboard');
+        }
         return view('admin.auth.forgot_password', compact('page_title'));
     }
 
@@ -44,6 +52,10 @@ class AuthController extends Controller
     public function resetPassword($token)
     {
         $page_title = 'Reset Password';
+        $admin = Auth::guard('admin')->user();
+        if($admin) {
+            return redirect()->route('admin-dashboard');
+        }
         return view('admin.auth.reset_password', compact('page_title', 'token'));
     }
 

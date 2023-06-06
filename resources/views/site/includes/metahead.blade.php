@@ -26,7 +26,7 @@
 @endphp
 
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en-AE">
 
 <head>
     <meta charset="utf-8">

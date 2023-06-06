@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 // Route::get('/', 'TestController@index');
 Route::get('/', 'PageController@home')->name('home');
+Route::get('/admin', 'PageController@admin');
 Route::get('/about-us', 'PageController@about')->name('about');
 Route::get('/services', 'PageController@service')->name('service');
 Route::get('/service/{slug}', 'PageController@serviceDetail')->name('service-detail');
@@ -29,3 +30,4 @@ Route::get('/404', 'PageController@error404')->name('404');
 //landing page
 Route::get('/digital-transformation', 'PageController@digitalTransformation')->name('digital-transformation');
 Route::post('/landing-form-action', 'PageController@landingFormAction')->name('landing-form-action');
+Route::get('/{slug}', 'PageController@landingPage')->name('landing-page');

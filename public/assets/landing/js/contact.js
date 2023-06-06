@@ -16,7 +16,12 @@ jQuery(document).ready(function () {
         var name = jQuery('input[name="contact_name"]').val();
         var email = jQuery('input[name="email_address"]').val();
         var phone = jQuery('input[name="mobile_no"]').val();
-        var service = jQuery('input[name="service"]').val();
+
+        if(jQuery('input[name="service"]').val()) {
+          var service = jQuery('input[name="service"]').val();
+        } else {
+          var service = jQuery('textarea[name="message"]').val();;
+        }
 
         var url = "https://wa.me/97145299497?text="
         +"*Your Name :* "+name+"%0a"

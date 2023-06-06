@@ -22,6 +22,7 @@ class AdminAuthenticate
         if (Auth::guard('admin')->guest()) {
             return redirect(route('admin-login'));
         }
+
         $response = $next($request);
         $response->headers->set('Access-Control-Allow-Origin' , '*');
         $response->headers->set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE');
