@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AERA Capital - Web Design & Development Agency Dubai</title>
+    <title>AERA Capital - Digital Transformation Service Dubai</title>
     <link rel="icon" href="{{ asset('assets/landing/img/favicon.svg') }}">
 
     <!-- CSS only -->
