@@ -68,10 +68,26 @@
                                                                     <th width="150">Mobile:</th>
                                                                     <td>{{ $mobile_no }}</td>
                                                                 </tr>
+                                                                @if($service)
                                                                 <tr>
                                                                     <th width="150">Service Required:</th>
-                                                                    <td>{{ $service }}</td>
+                                                                    <td>{{ @$service }}</td>
                                                                 </tr>
+                                                                @endif
+
+                                                                @if($remarks)
+                                                                <tr>
+                                                                    <th width="150">Message:</th>
+                                                                    <td>{{ @$remarks }}</td>
+                                                                </tr>
+                                                                @endif
+
+                                                                @if($slug)
+                                                                <tr>
+                                                                    <th width="150">Page Slug:</th>
+                                                                    <td>{{ @$slug }}</td>
+                                                                </tr>
+                                                                @endif
                                                             </table>
                                                             <br>
                                                             </p>

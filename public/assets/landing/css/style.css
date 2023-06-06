@@ -338,7 +338,7 @@ form.get-a-quote i {
     margin-right: 30px;
 }
 .get-a-quote h2 {
-    font-weight: 40px;
+    font-size: 40px;
     font-weight: 800;
 }
 .get-a-quote span {
@@ -381,6 +381,7 @@ form.get-a-quote i {
     border-bottom-right-radius: 0;
 }
 .get-a-quote input[type="text"],
+.get-a-quote input[type="email"],
 .get-a-quote input[type="number"] {
     width: 100%;
     height: 64px;
@@ -388,7 +389,7 @@ form.get-a-quote i {
     border-radius: 12px;
     outline: 0;
     margin-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
     color: #444;
     font-size: 16px;
     padding-right: 86px;
@@ -411,6 +412,23 @@ form.get-a-quote i {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+.get-a-quote textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    outline: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #444;
+    font-size: 16px;
+    padding-right: 86px;
+    box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d3d3d3;
+}
+
 .radio-button {
     padding: 15px;
     background-color: #edf4ff;
@@ -517,14 +535,14 @@ form.get-a-quote i {
 }
 /* 7. how-it-works */
 .how-it-works .heading h2 {
-    width: 70%;
+    width: 100%;
 }
 .how-it-works {
     position: relative;
 }
 .how-it-works:before {
     width: 100%;
-    height: 88%;
+    height: 100%;
     content: "";
     position: absolute;
     top: 0;

@@ -35,6 +35,13 @@
                     </a>
                 </li>
 
+                <li class="{{ $nav == 'landing' ? 'menuitem-active' : '' }}">
+                    <a href="{{ route('admin-landing-pages') }}" class="{{ $nav == 'landing' ? 'active' : '' }}">
+                        <i class="mdi mdi-buffer"></i>
+                        <span> Landing Pages </span>
+                    </a>
+                </li>
+
                 <li class="{{ $nav == 'blog' ? 'menuitem-active' : '' }}">
                     <a href="{{ route('admin-blog') }}" class="{{ $nav == 'blog' ? 'active' : '' }}">
                         <i class="mdi mdi-blogger"></i>

@@ -3,18 +3,18 @@
 use Illuminate\Support\Facades\Route;
 
 Route::controller('AuthController')->group(function () {
-    Route::get('login', 'login')->name('admin-login');
-    Route::post('check/login', 'checkLogin')->name('admin-checkLogin');
-    Route::get('forgot-password', 'forgotPassword')->name('admin-forgot-password');
-    Route::post('forget-password', 'forgetPassword')->name('admin-forget-password');
-    Route::get('reset-password/{token}', 'resetPassword')->name('admin-reset-password');
-    Route::post('reset-password', 'savePassword')->name('admin-save-password');
+    Route::get('/login', 'login')->name('admin-login');
+    Route::post('/check/login', 'checkLogin')->name('admin-checkLogin');
+    Route::get('/forgot-password', 'forgotPassword')->name('admin-forgot-password');
+    Route::post('/forget-password', 'forgetPassword')->name('admin-forget-password');
+    Route::get('/reset-password/{token}', 'resetPassword')->name('admin-reset-password');
+    Route::post('/reset-password', 'savePassword')->name('admin-save-password');
 });
 
 Route::group(['middleware' => 'adminauth'], function () {
 
-    Route::get('/', 'DashboardController@index')->name('admin-dashboard');
-    Route::get('logout', 'AuthController@logout')->name('admin-logout');
+    Route::get('/dashboard', 'DashboardController@index')->name('admin-dashboard');
+    Route::get('/logout', 'AuthController@logout')->name('admin-logout');
 
     Route::controller('FilemanagerController')->group(function () {
         Route::get('/filemanager', 'index')->name('admin-filemanager');
@@ -147,5 +147,14 @@ Route::group(['middleware' => 'adminauth'], function () {
         Route::post('/product/addaction', 'addAction')->name('admin-product-addaction');
         Route::post('/product/delete', 'delete')->name('admin-product-delete');
         Route::post('/product/slug', 'slug')->name('admin-product-slug');
+    });
+
+    Route::controller('LandingPageController')->group(function () {
+        Route::get('/landing-pages', 'index')->name('admin-landing-pages');
+        Route::post('/landing-page/status', 'status')->name('admin-landing-page-status');
+        Route::get('/landing-page/add', 'addEdit')->name('admin-landing-page-add');
+        Route::post('/landing-page/addaction', 'addAction')->name('admin-landing-page-addaction');
+        Route::post('/landing-page/delete', 'delete')->name('admin-landing-page-delete');
+        Route::post('/landing-page/slug', 'slug')->name('admin-landing-page-slug');
     });
 });
