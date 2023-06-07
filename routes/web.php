@@ -31,3 +31,5 @@ Route::get('/404', 'PageController@error404')->name('404');
 Route::get('/digital-transformation', 'PageController@digitalTransformation')->name('digital-transformation');
 Route::post('/landing-form-action', 'PageController@landingFormAction')->name('landing-form-action');
 Route::get('/{slug}', 'PageController@landingPage')->name('landing-page');
+
+Route::get('/sitemap/generate', 'UtilsController@generateSitemap');

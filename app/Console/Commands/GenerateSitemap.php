@@ -25,7 +25,7 @@ class GenerateSitemap extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Generate Sitemap';
 
     /**
      * Execute the console command.
@@ -34,19 +34,19 @@ class GenerateSitemap extends Command
     {
         $aera_sitemap = Sitemap::create();
 
-        $aera_sitemap->add(Url::create("/"));
-        $aera_sitemap->add(Url::create("/about-us"));
-        $aera_sitemap->add(Url::create("/services"));
-        $aera_sitemap->add(Url::create("/blogs"));
-        $aera_sitemap->add(Url::create("/contact-us"));
-        $aera_sitemap->add(Url::create("/faq"));
-        $aera_sitemap->add(Url::create("/digital-transformation"));
+        $aera_sitemap->add(Url::create("/")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/about-us")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/services")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/blogs")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/contact-us")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/faq")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/digital-transformation")->setPriority(0.9));
 
         Product::get()->each(function (Product $product) use ($aera_sitemap) {
             $aera_sitemap->add(
                 Url::create("/product/{$product->slug}")
                     ->setPriority(0.9)
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
             );
         });
 
@@ -54,7 +54,7 @@ class GenerateSitemap extends Command
             $aera_sitemap->add(
                 Url::create("/service/{$service->slug}")
                     ->setPriority(0.9)
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
             );
         });
 
@@ -70,7 +70,7 @@ class GenerateSitemap extends Command
             $aera_sitemap->add(
                 Url::create("/{$landingPage->slug}")
                     ->setPriority(0.9)
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
             );
         });
 
