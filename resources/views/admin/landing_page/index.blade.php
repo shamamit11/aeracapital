@@ -38,7 +38,7 @@
                                                 <tr id="tr{{ $landing_page->id }}">
                                                     <td>{{ $count++ }}</td>
                                                     <td>{{ $landing_page->name }}</td>
-                                                    <td>{{ $landing_page->slug }}</td>
+                                                    <td><a href="{{ route('landing-page', [$landing_page->slug]) }}" target="_blank">{{ $landing_page->slug }}</a></td>
                                                     <td align="center"><label class="switch">
                                                             <input class="switch-input switch-status" type="checkbox"
                                                                 data-id="{{ $landing_page->id }}"
