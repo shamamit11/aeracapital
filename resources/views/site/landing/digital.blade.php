@@ -86,7 +86,7 @@
                     </a>
                 </div>
                 <div class="callto">
-                    <a href="callto:+97145299497">+971 452 99497</a>
+                    <a href="tel:+97145299497">+971 452 99497</a>
                     <i>
                         <svg fill="none" height="112" viewBox="0 0 24 24" width="112"
                             xmlns="http://www.w3.org/2000/svg">
