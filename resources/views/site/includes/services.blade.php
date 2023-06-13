@@ -24,7 +24,7 @@
                                 <img src="{{ $service->icon }}" alt="{{ $service->title }}">
                                 <span class="dots"></span>
                             </div>
-                            <h3 class="box-title"><a href="{{route('service', [$service->slug])}}">{{ $service->title }}</a></h3>
+                            <h3 class="box-title"><a href="{{route('service-detail', [$service->slug])}}">{{ $service->title }}</a></h3>
                             <p class="service-card_text">{{ $service->sub_description }}</p>
                             <a href="{{route('service-detail', [$service->slug])}}" class="as-btn">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
