@@ -207,10 +207,30 @@
                             <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile Number"
                                 required>
                         </div>
+
+
+                        <div class="group-img">
+                            <svg fill="none" height="112" viewBox="0 0 24 24" width="112"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-rule="evenodd" fill="rgb(0,0,0)" fill-rule="evenodd">
+                                    <path
+                                        d="m7 2.75c-.41421 0-.75.33579-.75.75v17c0 .4142.33579.75.75.75h10c.4142 0 .75-.3358.75-.75v-17c0-.41421-.3358-.75-.75-.75zm-2.25.75c0-1.24264 1.00736-2.25 2.25-2.25h10c1.2426 0 2.25 1.00736 2.25 2.25v17c0 1.2426-1.0074 2.25-2.25 2.25h-10c-1.24264 0-2.25-1.0074-2.25-2.25z">
+                                    </path>
+                                    <path
+                                        d="m10.25 5c0-.41421.3358-.75.75-.75h2c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-2c-.4142 0-.75-.33579-.75-.75z">
+                                    </path>
+                                    <path
+                                        d="m9.25 19c0-.4142.33579-.75.75-.75h4c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-4c-.41421 0-.75-.3358-.75-.75z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <input type="text" name="company_name" id="company_name" placeholder="Company Name"
+                                required>
+                        </div>
                         <p>Brief about your requirement: </p>
 
                         <div class="">
-                            <textarea rows="8" name="message" id="message" required></textarea>
+                            <textarea rows="4" name="message" id="message"></textarea>
                         </div>
 
                         <input type="hidden" name="slug" id="slug" value="{{$landing->slug}}">

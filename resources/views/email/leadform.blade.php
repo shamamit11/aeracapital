@@ -68,6 +68,10 @@
                                                                     <th width="150">Mobile:</th>
                                                                     <td>{{ $mobile_no }}</td>
                                                                 </tr>
+                                                                <tr>
+                                                                    <th width="150">Company:</th>
+                                                                    <td>{{ $company_name }}</td>
+                                                                </tr>
                                                                 @if($service)
                                                                 <tr>
                                                                     <th width="150">Service Required:</th>

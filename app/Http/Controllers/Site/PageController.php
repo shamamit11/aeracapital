@@ -162,6 +162,7 @@ class PageController extends Controller
             'contact_name' => $request['contact_name'],
             'email_address' => $request['email_address'],
             'mobile_no' => $request['mobile_no'],
+            'company_name' => $request['company_name'] ? $request['company_name'] : '',
             'service' => $request['service'] ? $request['service'] : '',
             'remarks' => $request['message'] ? $request['message'] : '',
             'slug' => $request['slug'] ? $request['slug'] : '',
