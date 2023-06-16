@@ -19,7 +19,7 @@
         font-size: 18px;
     }
     h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
     h2 {
         font-size: 50px;
@@ -179,7 +179,7 @@
         margin-right: 50px;
     }
 	.hero-section-text {
-		margin-top:150px;
+		margin-top:50px;
 	}
     .hero-section-text p {
         padding-bottom: 30px;
@@ -272,7 +272,7 @@
         margin-top: 0;
     }
 	.hero-section-text {
-		margin-top:150px;
+		margin-top:0px;
 	}
     .hero-section.two img.dots,
     .hero-section.three img.dots {
