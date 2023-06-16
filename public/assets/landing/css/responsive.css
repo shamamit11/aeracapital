@@ -10,7 +10,8 @@
         padding-top: 20px;
     }
 	.hero-section-text {
-		margin-top:150px;
+		margin-top:50px;
+        margin-left: 20px;
 	}
 }
 @media (max-width: 1400px) {
