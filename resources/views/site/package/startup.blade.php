@@ -211,7 +211,7 @@
 
             <div class="mt-5 text-center">
                 <h5>Are you an Existing Business looking for Digital Transformation?</h5>
-                <p>dssds</p>
+                <p>Our package encompasses a holistic approach to revolutionizing your operations, processes, and customer experiences.</p>
                 <a href="{{route('digital-transformation-existing')}}" class="as-btn">Click Here</a>
             </div>
         </div>
