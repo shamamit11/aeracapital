@@ -32,4 +32,8 @@ Route::get('/digital-transformation', 'PageController@digitalTransformation')->n
 Route::post('/landing-form-action', 'PageController@landingFormAction')->name('landing-form-action');
 Route::get('/{slug}', 'PageController@landingPage')->name('landing-page');
 
+Route::get('/package/digital-transformation-for-startup-business', 'PackageController@startup')->name('digital-transformation-startup');
+Route::get('/package/digital-transformation-for-existing-business', 'PackageController@existing')->name('digital-transformation-existing');
+Route::post('/package/lead-form-submit', 'PackageController@submitLeadForm')->name('lead-form-submit');
+
 Route::get('/sitemap/generate', 'UtilsController@generateSitemap');

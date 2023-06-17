@@ -80,6 +80,7 @@
     
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/site/css/style.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/site/css/style.css') }}"> --}}
 
 </head>
 

@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="sticky-wrapper">
+        <div class="">
             <!-- Main Menu Area -->
             <div class="menu-area">
                 <div class="container">

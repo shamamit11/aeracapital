@@ -17,28 +17,37 @@ $settings = Setting::first();
                 </div>
                 <div class="col-xl-6 ps-xl-4">
                     <h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>
-                    <form action="mail.php" method="POST" class="appoitment-form ajax-contact">
+                    <form action="{{route('contact-form-action')}}" method="POST" class="contact-form ajax-contact" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                <i class="fa fa-user"></i>
                             </div>
                             <div class="form-group col-sm-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                                <i class="fa fa-envelope"></i>
                             </div>
                             <div class="form-group col-sm-6">
-                                <select name="subject" id="subject" class="form-select">
+                                <select name="service" id="service" class="form-select">
                                     <option value="" disabled selected hidden>Select Subject</option>
-                                    <option value="IT Consult">IT Consult</option>
-                                    <option value="UI/UX Design">UI/UX Design</option>
-                                    <option value="Branding Solution">Branding Solution</option>
-                                    <option value="Product Marketing">Product Marketing</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="Custom Web Development">Custom Web Development</option>
+                                    <option value="Mobile App Development">Mobile App Development</option>
+                                    <option value="E-commerce Solutions">E-commerce Solutions</option>
+                                    <option value="Digital Marketing Solutions">Digital Marketing Solutions</option>
+                                    <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                    <option value="CRM / ERP Solutions">CRM / ERP Solutions</option>
                                 </select>
+                                <i class="fa fa-chevron-down"></i>
                             </div>
                             <div class="form-group col-sm-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                                <input type="tel" class="form-control" name="mobile_no" id="mobile_no" placeholder="Mobile Number">
+                                <i class="fa fa-phone"></i>
                             </div>
                             <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Write Your Message"></textarea>
+                                <textarea name="remarks" id="remarks" cols="30" rows="3" class="form-control" placeholder="Your Message"></textarea>
+                                <i class="fa fa-comment"></i>
                             </div>
                             <div class="form-btn col-12">
                                 <button class="as-btn w-100">MAKE AN APPOINTMENT</button>

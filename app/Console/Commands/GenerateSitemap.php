@@ -40,7 +40,8 @@ class GenerateSitemap extends Command
         $aera_sitemap->add(Url::create("/blogs")->setPriority(0.9));
         $aera_sitemap->add(Url::create("/contact-us")->setPriority(0.9));
         $aera_sitemap->add(Url::create("/faq")->setPriority(0.9));
-        $aera_sitemap->add(Url::create("/digital-transformation")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/package/digital-transformation-for-startup-business")->setPriority(0.9));
+        $aera_sitemap->add(Url::create("/package/digital-transformation-for-existing-business")->setPriority(0.9));
 
         Product::get()->each(function (Product $product) use ($aera_sitemap) {
             $aera_sitemap->add(

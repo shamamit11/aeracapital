@@ -615,7 +615,7 @@ input[type="number"] {
 input[type="checkbox"] {
   visibility: hidden;
   opacity: 0;
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   width: 0;
   height: 0;
@@ -623,7 +623,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked ~ label:before {
-  content: "\f00c";
+  content: "\f00c" !important;
+  font-family: "Font Awesome 5 Free" !important;
   color: var(--white-color);
   background-color: var(--theme-color);
   border-color: var(--theme-color);
@@ -13468,7 +13469,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .price-card .checklist {
-  margin: -5px 0 32px 0;
+  margin: -5px 0 0px 0;
 }
 
 .price-card .as-btn {
