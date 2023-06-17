@@ -40,7 +40,7 @@
                                         {{-- <p class="price-card_text">Pricing plan for IT Solution company</p> --}}
                                         <h4 class="price-card_price"><span style="text-decoration: line-through">AED
                                                 10,000</span> AED
-                                            7,000 <span class="duration">/ One-time Setup Price</span></h4>
+                                            7,000 <span class="duration">/ One-time Setup Price, you will get:</span></h4>
                                     </div>
                                     <div class="price-card_content">
                                         <div class="checklist">
@@ -83,7 +83,7 @@
                                         {{-- <p class="price-card_text">Pricing plan for IT Solution company</p> --}}
                                         <h4 class="price-card_price"><span style="text-decoration: line-through">AED
                                                 15,000</span> AED
-                                            10,000 <span class="duration">/ One-time Setup Price</span></h4>
+                                            10,000 <span class="duration">/ One-time Setup Price, you will get:</span></h4>
                                     </div>
                                     <div class="price-card_content">
                                         <div class="checklist">
