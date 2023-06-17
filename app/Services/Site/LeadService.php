@@ -23,27 +23,27 @@ class LeadService
             }
 
             if(@$request['addons']) {
-                $implode_addons = implode(",", $request['addons']);
+                $implode_addons = implode(", ", $request['addons']);
                 $lead->addons = $implode_addons;
             }
 
             if(@$request['business_consultation']) {
-                $implode_business_consultation = implode(",", $request['business_consultation']);
+                $implode_business_consultation = implode(", ", $request['business_consultation']);
                 $lead->business_consultation = $implode_business_consultation;
             }
 
             if(@$request['business_solutions']) {
-                $implode_business_solutions = implode(",", $request['business_solutions']);
+                $implode_business_solutions = implode(", ", $request['business_solutions']);
                 $lead->business_solutions = $implode_business_solutions;
             }
 
             if(@$request['development']) {
-                $implode_development = implode(",", $request['development']);
+                $implode_development = implode(", ", $request['development']);
                 $lead->development = $implode_development;
             }
 
             if(@$request['marketing']) {
-                $implode_marketing = implode(",", $request['marketing']);
+                $implode_marketing = implode(", ", $request['marketing']);
                 $lead->marketing = $implode_marketing;
             }
 

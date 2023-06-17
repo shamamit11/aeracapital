@@ -19,6 +19,15 @@
                     </a>
                 </li>
 
+                <li class="menu-title mt-2">Leads</li>
+
+                <li class="{{ $nav == 'lead' ? 'menuitem-active' : '' }}">
+                    <a href="{{ route('admin-leads') }}" class="{{ $nav == 'lead' ? 'active' : '' }}">
+                        <i class="mdi mdi-account-multiple"></i>
+                        <span> Leads </span>
+                    </a>
+                </li>
+
                 <li class="menu-title mt-2">Main Pages</li>
                
                 <li class="{{ $nav == 'service' ? 'menuitem-active' : '' }}">
@@ -102,7 +111,7 @@
 
                 <li class="{{ $nav == 'client' ? 'menuitem-active' : '' }}">
                     <a href="{{ route('admin-client') }}" class="{{ $nav == 'client' ? 'active' : '' }}">
-                        <i class="mdi mdi-account-multiple"></i>
+                        <i class="mdi mdi-account"></i>
                         <span> Clients </span>
                     </a>
                 </li>

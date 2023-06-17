@@ -88,35 +88,35 @@
                                                                 @if($addons)
                                                                 <tr>
                                                                     <th width="150">Addons:</th>
-                                                                    <td>{{ implode(",", @$addons) }}</td>
+                                                                    <td>{{ implode(", ", @$addons) }}</td>
                                                                 </tr>
                                                                 @endif
 
                                                                 @if($business_consultation)
                                                                 <tr>
                                                                     <th width="150">Business Consultation:</th>
-                                                                    <td>{{ implode(",", @$business_consultation) }}</td>
+                                                                    <td>{{ implode(", ", @$business_consultation) }}</td>
                                                                 </tr>
                                                                 @endif
 
                                                                 @if($business_solutions)
                                                                 <tr>
                                                                     <th width="150">Business Solutions:</th>
-                                                                    <td>{{ implode(",", @$business_solutions) }}</td>
+                                                                    <td>{{ implode(", ", @$business_solutions) }}</td>
                                                                 </tr>
                                                                 @endif
 
                                                                 @if($development)
                                                                 <tr>
                                                                     <th width="150">Development:</th>
-                                                                    <td>{{ implode(",", @$development) }}</td>
+                                                                    <td>{{ implode(", ", @$development) }}</td>
                                                                 </tr>
                                                                 @endif
 
                                                                 @if($marketing)
                                                                 <tr>
                                                                     <th width="150">Marketing:</th>
-                                                                    <td>{{ implode(",", @$marketing) }}</td>
+                                                                    <td>{{ implode(", ", @$marketing) }}</td>
                                                                 </tr>
                                                                 @endif
                                                             </table>

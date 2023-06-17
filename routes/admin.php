@@ -157,4 +157,10 @@ Route::group(['middleware' => 'adminauth'], function () {
         Route::post('/landing-page/delete', 'delete')->name('admin-landing-page-delete');
         Route::post('/landing-page/slug', 'slug')->name('admin-landing-page-slug');
     });
+
+    Route::controller('LeadController')->group(function () {
+        Route::get('/leads', 'index')->name('admin-leads');
+        Route::get('/lead/view', 'view')->name('admin-lead-view');
+        Route::post('/lead/delete', 'delete')->name('admin-lead-delete');
+    });
 });
