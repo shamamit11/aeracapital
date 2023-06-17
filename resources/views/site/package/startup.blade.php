@@ -160,6 +160,10 @@
                                             <input type="checkbox" id="crm" name="addons[]" value="CRM System">
                                             <label for="crm">CRM System</label>
                                         </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="ecomm" name="addons[]" value="E-commerce Development">
+                                            <label for="ecomm">E-commerce Development</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
