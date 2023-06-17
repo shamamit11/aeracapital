@@ -19,10 +19,8 @@
             @include('site.includes.alert')
             
             <div class="title-area text-center">
-                <h2 class="sec-title">Transform Your Existing Business with Our Digital Package</h2>
-                <p>Are you a startup business looking to make a big impact in the digital world? Our Digital Transformation
-                    Package is designed to help you achieve your goals and grow your business. With our expertise in digital
-                    marketing and technology, we can help you transform your business and stay ahead of the competition.</p>
+                <h2 class="sec-title">The Ultimate Digital Transformation Package for Existing Businesses</h2>
+                <p>Introducing our comprehensive digital transformation package designed specifically for existing businesses seeking to thrive in the ever-evolving digital landscape. Our package encompasses a holistic approach to revolutionizing your operations, processes, and customer experiences. With a team of experienced experts, we will assess your current infrastructure, identify areas for improvement, and implement tailored digital solutions that leverage the latest technologies. From streamlining internal workflows to enhancing customer engagement, our digital transformation package will empower your business to stay ahead of the competition, embrace innovation, and unlock new opportunities for sustainable growth in the digital age.</p>
             </div>
 
             <div class="achivement-box-area">
