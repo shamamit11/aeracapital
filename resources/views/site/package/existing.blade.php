@@ -17,16 +17,23 @@
         <div class="container">
 
             @include('site.includes.alert')
-            
+
             <div class="title-area text-center">
                 <h2 class="sec-title">The Ultimate Digital Transformation Package for Existing Businesses</h2>
-                <p>Introducing our comprehensive digital transformation package designed specifically for existing businesses seeking to thrive in the ever-evolving digital landscape. Our package encompasses a holistic approach to revolutionizing your operations, processes, and customer experiences. With a team of experienced experts, we will assess your current infrastructure, identify areas for improvement, and implement tailored digital solutions that leverage the latest technologies. From streamlining internal workflows to enhancing customer engagement, our digital transformation package will empower your business to stay ahead of the competition, embrace innovation, and unlock new opportunities for sustainable growth in the digital age.</p>
+                <p>Introducing our comprehensive digital transformation package designed specifically for existing
+                    businesses seeking to thrive in the ever-evolving digital landscape. Our package encompasses a holistic
+                    approach to revolutionizing your operations, processes, and customer experiences. With a team of
+                    experienced experts, we will assess your current infrastructure, identify areas for improvement, and
+                    implement tailored digital solutions that leverage the latest technologies. From streamlining internal
+                    workflows to enhancing customer engagement, our digital transformation package will empower your
+                    business to stay ahead of the competition, embrace innovation, and unlock new opportunities for
+                    sustainable growth in the digital age.</p>
             </div>
 
             <div class="achivement-box-area">
                 <div class="" style="background-color: #fff !important; padding: 35px;">
                     <div class="row mt-3">
-                        <form action="{{$form_action}}" method="POST" enctype="multipart/form-data" id="form">
+                        <form action="{{ $form_action }}" method="POST" enctype="multipart/form-data" id="form">
                             @csrf
                             <input type="hidden" class="form-control" id="package" name="package"
                                 value="Business Package">
@@ -64,7 +71,7 @@
                                         </div>
                                     </div>
                                 </div>
-                               
+
                             </div>
                             <div class="col-md-12 mt-5">
                                 <h6 class="">Business Solutions</h6>
@@ -82,7 +89,8 @@
                                             <label for="hrms">HR Management System</label>
                                         </div>
                                         <div class="form-group">
-                                            <input type="checkbox" id="crm" name="business_solutions[]" value="CRM System">
+                                            <input type="checkbox" id="crm" name="business_solutions[]"
+                                                value="CRM System">
                                             <label for="crm">CRM System</label>
                                         </div>
                                     </div>
@@ -104,8 +112,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
+
+
                             </div>
                             <div class="col-md-12 mt-5">
                                 <h6 class="">Development</h6>
@@ -184,28 +192,36 @@
                                 <h6 class="">Provide Your Information</h6>
                                 <hr>
                                 <div class="form-group mt-4">
-                                    <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name" placeholder="Your Name" value="{{ old('name')}}">
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror"
+                                        name="name" id="name" placeholder="Your Name"
+                                        value="{{ old('name') }}">
                                     <i class="fa fa-user"></i>
                                     @error('name')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group mt-4">
-                                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email Address" value="{{ old('email')}}">
+                                    <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                        name="email" id="email" placeholder="Email Address"
+                                        value="{{ old('email') }}">
                                     <i class="fa fa-envelope"></i>
                                     @error('email')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group mt-4">
-                                    <input type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" id="mobile" placeholder="Mobile / Phone Number" value="{{ old('mobile')}}">
+                                    <input type="text" class="form-control @error('mobile') is-invalid @enderror"
+                                        name="mobile" id="mobile" placeholder="Mobile / Phone Number"
+                                        value="{{ old('mobile') }}">
                                     <i class="fa fa-phone"></i>
                                     @error('mobile')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group mt-4">
-                                    <input type="text" class="form-control @error('company') is-invalid @enderror" name="company" id="company" placeholder="Company Name" value="{{ old('company')}}">
+                                    <input type="text" class="form-control @error('company') is-invalid @enderror"
+                                        name="company" id="company" placeholder="Company Name"
+                                        value="{{ old('company') }}">
                                     <i class="fa fa-building"></i>
                                     @error('company')
                                         <span class="text-danger">{{ $message }}</span>
@@ -232,45 +248,63 @@
             <div class="row">
                 <div class="col-xl-12 pe-xxl-12 mb-40 mb-xl-40">
                     <div class="title-area mb-35 text-xl-start text-center">
-                        <h2 class="sec-title">What is the Digital Transformation Package?</h2>
+                        <h2 class="sec-title">Digital Transformation: What It Is and Why It Matters?</h2>
                     </div>
                     <p class="mt-n2 mb-30 text-xl-start text-center">
-                        The Digital Transformation Package is a comprehensive solution designed specifically for startup
-                        businesses looking to make a big impact in the digital world. It includes a range of services such
-                        as website design and development, search engine optimization, social media marketing, email
-                        marketing, and more. Our team of experts will work with you to create a customized plan that meets
-                        your unique needs and helps you achieve your business goals. Let us help you transform your startup
-                        business and take it to the next level.
+                        Digital transformation is the profound and strategic integration of digital technologies into all
+                        aspects of a business, leading to significant changes in how organizations operate and deliver value
+                        to their customers. It goes beyond merely adopting new tools or automating processes; it entails a
+                        fundamental shift in mindset, culture, and operational models. In today's rapidly evolving digital
+                        landscape, where technology is reshaping industries and customer expectations are constantly
+                        evolving, embracing digital transformation is no longer a choice but a necessity for businesses to
+                        remain competitive. It enables organizations to leverage the power of digital innovations such as
+                        artificial intelligence, cloud computing, big data analytics, and the Internet of Things (IoT) to
+                        optimize operations, enhance customer experiences, drive innovation, and unlock new revenue streams.
+                        By harnessing the potential of digital transformation, businesses can adapt to changing market
+                        dynamics, identify new growth opportunities, and future-proof their operations in an increasingly
+                        digital-first world.
                     </p>
                 </div>
 
                 <div class="col-xl-12 pe-xxl-12 mb-40 mb-xl-40">
                     <div class="title-area mb-35 text-xl-start text-center">
-                        <h2 class="sec-title">How can it benefit startup businesses?</h2>
+                        <h2 class="sec-title">How to Implement a Digital Transformation Strategy for Your Business?</h2>
                     </div>
                     <p class="mt-n2 mb-30 text-xl-start text-center">
-                        The Digital Transformation Package can benefit startup businesses in many ways. By providing a
-                        comprehensive solution that includes website design and development, search engine optimization,
-                        social media marketing, email marketing, and more, we can help you establish a strong online
-                        presence and reach your target audience more effectively. Our team of experts will work with you to
-                        create a customized plan that meets your unique needs and helps you achieve your business goals.
-                        With our help, you can transform your startup business and take it to the next level.
+                        Implementing a digital transformation strategy for your business requires careful planning and
+                        execution to ensure its success. First and foremost, it is essential to gain a deep understanding of
+                        your business goals, customer needs, and market dynamics. This will help define the specific areas
+                        where digital transformation can have the most impact. Next, assemble a cross-functional team of
+                        stakeholders who will champion the transformation process and collaborate on developing a
+                        comprehensive roadmap. Assess your existing technology infrastructure and identify gaps that need to
+                        be addressed. Embrace a culture of innovation and encourage your employees to adapt to change by
+                        providing training and support. Prioritize investments in digital technologies that align with your
+                        strategic objectives and have the potential to deliver tangible benefits. Finally, monitor and
+                        evaluate the progress of your digital transformation initiatives, making adjustments as needed, and
+                        continuously seek opportunities for further optimization and innovation. By following these steps,
+                        your business can navigate the digital transformation journey effectively and unlock its full
+                        potential for growth and success.
                     </p>
                 </div>
 
                 <div class="col-xl-12 pe-xxl-12">
                     <div class="title-area mb-35 text-xl-start text-center">
-                        <h2 class="sec-title">How does the package help businesses achieve their goals?</h2>
+                        <h2 class="sec-title">Digital Transformation Packages for Small and Medium-Sized Businesses</h2>
                     </div>
                     <p class="mt-n2 text-xl-start text-center">
-                        Our Digital Transformation Package is designed to provide startup businesses with a comprehensive
-                        set of digital marketing tools and strategies that can help them achieve their goals. By working
-                        with our team of experts, businesses can create a customized plan that addresses their unique needs
-                        and challenges. Whether it's improving their website's design and functionality, optimizing their
-                        content for search engines, or developing a social media marketing strategy, our package provides
-                        the resources and support businesses need to succeed in today's digital landscape. With our help,
-                        businesses can establish a strong online presence, reach their target audience more effectively, and
-                        ultimately grow their business.
+                        Our tailored digital transformation packages are specifically designed to empower small and
+                        medium-sized businesses (SMBs) to embark on a successful digital transformation journey. Recognizing
+                        the unique challenges and resource limitations faced by SMBs, our packages offer comprehensive
+                        solutions that are scalable, cost-effective, and customized to meet the specific needs of your
+                        business. We start by conducting a thorough assessment of your existing operations, technology
+                        infrastructure, and customer engagement channels. Based on these insights, we develop a roadmap that
+                        outlines the key digital initiatives needed to drive transformation and achieve your business goals.
+                        Our packages encompass a wide range of services, including technology implementation, process
+                        automation, data analytics, cloud migration, and digital marketing strategies. We provide ongoing
+                        support and training to ensure a smooth transition and maximize the value derived from the digital
+                        transformation process. With our expertise and tailored approach, SMBs can unlock new growth
+                        opportunities, enhance operational efficiency, improve customer experiences, and stay competitive in
+                        the digital age.
                     </p>
                 </div>
             </div>
