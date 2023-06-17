@@ -20,8 +20,6 @@
             
             <div class="title-area text-center">
                 <h2 class="sec-title">Transform Your Existing Business with Our Digital Package</h2>
-                <p>Our Digital Transformation Package is designed specifically for startup businesses looking to make a big
-                    impact. Let us help you achieve your goals and grow your business.</p>
                 <p>Are you a startup business looking to make a big impact in the digital world? Our Digital Transformation
                     Package is designed to help you achieve your goals and grow your business. With our expertise in digital
                     marketing and technology, we can help you transform your business and stay ahead of the competition.</p>
