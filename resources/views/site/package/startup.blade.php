@@ -145,6 +145,10 @@
                                             <input type="checkbox" id="content" name="addons[]" value="Content Writing">
                                             <label for="content">Content Writing</label>
                                         </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="mobileapp" name="addons[]" value="Mobile App Development">
+                                            <label for="mobileapp">Mobile App Development</label>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-6">
