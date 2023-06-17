@@ -182,8 +182,8 @@
                                         </div>
                                         <div class="form-group mt-4">
                                             <input type="checkbox" id="video" name="marketing[]"
-                                                value="Video Creation">
-                                            <label for="video">Video Creation</label>
+                                                value="Video Production">
+                                            <label for="video">Video Production</label>
                                         </div>
                                     </div>
                                 </div>
