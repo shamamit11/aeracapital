@@ -22,12 +22,7 @@
                 <h2 class="sec-title">The Ultimate Digital Transformation Package for Existing Businesses</h2>
                 <p>Introducing our comprehensive digital transformation package designed specifically for existing
                     businesses seeking to thrive in the ever-evolving digital landscape. Our package encompasses a holistic
-                    approach to revolutionizing your operations, processes, and customer experiences. With a team of
-                    experienced experts, we will assess your current infrastructure, identify areas for improvement, and
-                    implement tailored digital solutions that leverage the latest technologies. From streamlining internal
-                    workflows to enhancing customer engagement, our digital transformation package will empower your
-                    business to stay ahead of the competition, embrace innovation, and unlock new opportunities for
-                    sustainable growth in the digital age.</p>
+                    approach to revolutionizing your operations, processes, and customer experiences.</p>
             </div>
 
             <div class="achivement-box-area">
@@ -130,9 +125,19 @@
                                                 value="E-commerce Web Development">
                                             <label for="ecomm">E-commerce Web Development</label>
                                         </div>
+                                        <div class="form-group mt-4">
+                                            <input type="checkbox" id="pgi" name="development[]"
+                                                value="Payment Gateway Integration">
+                                            <label for="pgi">Payment Gateway Integration</label>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="webredesign" name="development[]"
+                                                value="Website Redesign">
+                                            <label for="webredesign">Website Redesign</label>
+                                        </div>
                                         <div class="form-group">
                                             <input type="checkbox" id="mobileapp" name="development[]"
                                                 value="Mobile App Development">
