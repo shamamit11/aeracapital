@@ -37,7 +37,7 @@
     <link rel="canonical" href="{{ $currenturl }}" />
     <meta property="og:title" content="{{ $meta_title }}" />
     <meta property="og:description" content="{{ $meta_description }}" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_AE" />
     <meta property="og:type" content="page" />
     <meta property="og:url" content="{{ $currenturl }}" />
     <meta property="og:site_name" content="Aera Capital" />
