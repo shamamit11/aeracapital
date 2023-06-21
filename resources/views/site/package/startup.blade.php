@@ -30,7 +30,11 @@
             </div>
 
             <div class="achivement-box-area filter-active-cat1">
+                
                 <div class="filter-item w-100 cat1">
+                    <div style="position: absolute; z-index: 999; top: -35px; right: -20px;">
+                        <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
+                    </div>
                     <div class="" style="background-color: #fff; padding: 35px;">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-md-12">
@@ -74,6 +78,9 @@
                     </div>
                 </div>
                 <div class="filter-item w-100 cat2">
+                    <div style="position: absolute; z-index: 999; top: -35px; right: -20px;">
+                        <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
+                    </div>
                     <div class="" style="background-color: #fff; padding: 35px;">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-md-12">

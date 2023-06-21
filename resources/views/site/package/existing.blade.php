@@ -26,6 +26,9 @@
             </div>
 
             <div class="achivement-box-area">
+                <div style="position: fixed; z-index: 999; bottom: 35px; right: -20px;">
+                    <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
+                </div>
                 <div class="" style="background-color: #fff !important; padding: 35px;">
                     <div class="row mt-3">
                         <form action="{{ $form_action }}" method="POST" enctype="multipart/form-data" id="form">
