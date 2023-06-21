@@ -23,7 +23,9 @@
                 <p>Are you a startup business looking to make a big impact in the digital world? Our Digital Transformation Package is designed to help you achieve your goals and grow your business. With our expertise in digital marketing and technology, we can help you transform your business and stay ahead of the competition.</p>
             </div>
 
-            
+            <div style="position: fixed; z-index: 999; bottom: 35px; right: -20px;">
+                <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
+            </div>
 
             <div class="achivement-tab filter-menu-active indicator-active"><button data-filter=".cat1" class="active"
                     type="button" onclick="setPackage('Start-up Basic')">Start-up Basic</button> <button data-filter=".cat2" type="button" onclick="setPackage('Start-up Plus')">Start-up Plus</button>
@@ -32,9 +34,6 @@
             <div class="achivement-box-area filter-active-cat1">
                 
                 <div class="filter-item w-100 cat1">
-                    <div style="position: absolute; z-index: 999; top: -35px; right: -20px;">
-                        <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
-                    </div>
                     <div class="" style="background-color: #fff; padding: 35px;">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-md-12">
@@ -78,9 +77,6 @@
                     </div>
                 </div>
                 <div class="filter-item w-100 cat2">
-                    <div style="position: absolute; z-index: 999; top: -35px; right: -20px;">
-                        <img src="{{ asset('assets/site/img/aera-30-off.png') }}" style="height:290px;">
-                    </div>
                     <div class="" style="background-color: #fff; padding: 35px;">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-md-12">
