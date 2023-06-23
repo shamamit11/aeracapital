@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Cms;
 use App\Models\CmsContent;
 use App\Models\Faq;
+use App\Models\Lead;
 use App\Models\Product;
 use App\Models\Cta;
 use App\Models\Service;
@@ -167,10 +168,19 @@ class PageController extends Controller
             'remarks' => $request['message'] ? $request['message'] : '',
             'slug' => $request['slug'] ? $request['slug'] : '',
         ];
+
+        $lead = new Lead;
+        $lead->name = $request['contact_name'];
+        $lead->email = $request['email_address'];
+        $lead->mobile = $request['mobile_no'];
+        $lead->company = $request['company_name'] ? $request['company_name'] : '';
+        $lead->package = $request['service'] ? $request['service'] : $request['message'];
+
         Mail::send('email.leadform', $emailData, function ($message) use ($request) {
             $message->to('info@aera-capital.com');
             $message->subject('New Lead Submission !!');
         });
+
         $message = "success";
         return $message;
     }
