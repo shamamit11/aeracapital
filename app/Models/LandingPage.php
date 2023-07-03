@@ -23,6 +23,7 @@ class LandingPage extends Model
         'status', 
         'meta_title', 
         'meta_description', 
+        'counter',
         'schema',
         'faq_schema',
     ];

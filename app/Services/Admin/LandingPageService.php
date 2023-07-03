@@ -73,6 +73,7 @@ class LandingPageService
             $landing->status = isset($request['status']) ? 1 : 1;
             $landing->meta_title = ($request['meta_title']) ? $request['meta_title'] : $request['hero_title'];
             $landing->meta_description = ($request['meta_description']) ? $request['meta_description'] : Str::limit(strip_tags($request['hero_description']), 200, '');
+            $landing->counter = $request['counter'];
             $landing->schema = $request['schema'];
             $landing->faq_schema = $request['faq_schema'];
             $landing->save();

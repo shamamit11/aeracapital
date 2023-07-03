@@ -36,6 +36,7 @@ class LandingPageRequest extends ApiRequest
             'status' => 'nullable',
             'meta_title' => 'required',
             'meta_description' => 'required',
+            'counter' => 'nullable',
             'schema' => '',
             'faq_schema' => '',
         ];

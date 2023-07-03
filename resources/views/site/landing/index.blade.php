@@ -200,47 +200,49 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <div class="business-performance">
-                <div class="row align-items-center">
-                    <div class="col-lg-4">
-                        <div class="business-performance-text">
-                            <h4>Business Performance Increases</h4>
+    @if($landing->counter == 1)
+        <section id="about">
+            <div class="container">
+                <div class="business-performance">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="business-performance-text">
+                                <h4>Business Performance Increases</h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="customers-performance">
-                            <div class="performance">
-                                <div class="performance-count">
-                                    <h2 class="timer count-title count-number" data-to="40" data-speed="1500">40
-                                    </h2>
-                                    <span><sup>+</sup></span>
+                        <div class="col-lg-8">
+                            <div class="customers-performance">
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="40" data-speed="1500">40
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Happy Satisfied<br> Customers</p>
                                 </div>
-                                <p>Happy Satisfied<br> Customers</p>
-                            </div>
-                            <div class="performance">
-                                <div class="performance-count">
-                                    <h2 class="timer count-title count-number" data-to="75" data-speed="1500">75
-                                    </h2>
-                                    <span><sup>+</sup></span>
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="75" data-speed="1500">75
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Completed<br> Projects</p>
                                 </div>
-                                <p>Completed<br> Projects</p>
-                            </div>
-                            <div class="performance">
-                                <div class="performance-count">
-                                    <h2 class="timer count-title count-number" data-to="20" data-speed="1500">20
-                                    </h2>
-                                    <span><sup>+</sup></span>
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="20" data-speed="1500">20
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Expert Team <br> Members</p>
                                 </div>
-                                <p>Expert Team <br> Members</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
     <section id="about" class="mb-5">
         <div class="container">
