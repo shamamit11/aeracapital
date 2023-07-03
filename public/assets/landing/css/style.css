@@ -82,7 +82,6 @@ img {
 ul {
     padding: 0;
     margin: 0;
-    list-style-type: disc;
 }
 
 li {
@@ -289,9 +288,11 @@ ul.star {
     border-radius: 34px;
     color: #ffab19;
     margin-bottom: 12px;
+    list-style-type: none !important;
 }
 
 ul.star li {
+    display: block !important;
     padding-right: 2px;
 }
 
