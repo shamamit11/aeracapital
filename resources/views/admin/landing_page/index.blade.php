@@ -28,7 +28,7 @@
                                             <tr>
                                                 <td width="50">#</td>
                                                 <td>Landing Page Name</td>
-                                                <td width="200">Slug</td>
+                                                <td width="400">Slug</td>
                                                 <td align="center" width="200">Status</td>
                                                 <td style="text-align:center" width="120">Action</td>
                                             </tr>
