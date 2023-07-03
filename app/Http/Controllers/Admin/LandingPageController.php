@@ -24,7 +24,7 @@ class LandingPageController extends Controller
         $nav = 'landing';
         $page_title = 'Landing Pages';
         $sub_nav = '';
-        $per_page = 10;
+        $per_page = 100;
         $page = ($request->has('page') && !empty($request->page)) ? $request->page : 1;
         $q = ($request->has('q') && !empty($request->q)) ? $request->q : '';
         $result = $this->landing->list($per_page, $page, $q);
