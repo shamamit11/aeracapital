@@ -27,8 +27,8 @@
                                         <thead class="table-light">
                                             <tr>
                                                 <td width="50">#</td>
-                                                <td>Landing Page Name</td>
-                                                <td width="400">Slug</td>
+                                                <td width="450">Landing Page Name</td>
+                                                <td>Slug</td>
                                                 <td align="center" width="200">Status</td>
                                                 <td style="text-align:center" width="120">Action</td>
                                             </tr>
@@ -38,7 +38,7 @@
                                                 <tr id="tr{{ $landing_page->id }}">
                                                     <td>{{ $count++ }}</td>
                                                     <td>{{ $landing_page->name }}</td>
-                                                    <td><a href="{{ route('landing-page', [$landing_page->slug]) }}" target="_blank">"{{ route('landing-page', [$landing_page->slug]) }}</a></td>
+                                                    <td><a href="{{ route('landing-page', [$landing_page->slug]) }}" target="_blank">{{ route('landing-page', [$landing_page->slug]) }}</a></td>
                                                     <td align="center"><label class="switch">
                                                             <input class="switch-input switch-status" type="checkbox"
                                                                 data-id="{{ $landing_page->id }}"
