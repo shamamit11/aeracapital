@@ -1,8 +1,10 @@
 @php
     use App\Models\Setting;
     use App\Models\Seo;
+    use App\Models\Counter;
     $settings = Setting::first();
     $currenturl = url()->full();
+    $counters = Counter::limit(4)->get();
     
     if (isset($landing) && !empty($landing)) {
         $meta_title = @$landing->meta_title;
@@ -205,37 +207,23 @@
             <div class="container">
                 <div class="business-performance">
                     <div class="row align-items-center">
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             <div class="business-performance-text">
-                                <h4>Business Performance Increases</h4>
+                                <h4>Our Business Performance</h4>
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-10">
                             <div class="customers-performance">
+                                @foreach($counters as $count)
                                 <div class="performance">
                                     <div class="performance-count">
-                                        <h2 class="timer count-title count-number" data-to="40" data-speed="1500">40
+                                        <h2 class="timer count-title count-number" data-to="{{$count->title}}" data-speed="1500">{{$count->title}}
                                         </h2>
                                         <span><sup>+</sup></span>
                                     </div>
-                                    <p>Happy Satisfied<br> Customers</p>
+                                    <p>{{$count->caption}}</p>
                                 </div>
-                                <div class="performance">
-                                    <div class="performance-count">
-                                        <h2 class="timer count-title count-number" data-to="75" data-speed="1500">75
-                                        </h2>
-                                        <span><sup>+</sup></span>
-                                    </div>
-                                    <p>Completed<br> Projects</p>
-                                </div>
-                                <div class="performance">
-                                    <div class="performance-count">
-                                        <h2 class="timer count-title count-number" data-to="20" data-speed="1500">20
-                                        </h2>
-                                        <span><sup>+</sup></span>
-                                    </div>
-                                    <p>Expert Team <br> Members</p>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -252,7 +240,7 @@
                         <h2>{{ $landing->intro_title }}</h2>
                     </div>
                     <div class="we-are">
-                        {{ $landing->intro_description }}
+                        <p>{{ $landing->intro_description }}</p>
                     </div>
                 </div>
                 @if ($landing->image_01)
@@ -267,7 +255,7 @@
         </div>
     </section>
 
-    <section class="how-it-works gap">
+    <section class="how-it-works">
         <div class="container">
             <div class="heading">
                 <h2>{{ $landing->content_title }}</h2>
@@ -280,7 +268,7 @@
         </div>
     </section>
 
-    <div id="contact" style="position: relative; bottom: 60px;">
+    <div id="contact" style="position: relative; bottom: 100px;">
         <div class="container">
             <div class="col-xl-12">
                 <div class="location">
@@ -359,10 +347,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="d-flax" style="background-color: #eee; padding: 30px 0;">
-        <div class="container text-center">
+        <div class="container text-center" style="margin-top: 50px">
             <?= date('Y') ?> © Aera Capital - Digital Transformation Company Dubai
         </div>
     </div>
