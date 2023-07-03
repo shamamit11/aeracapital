@@ -3,7 +3,7 @@
     use App\Models\Seo;
     $settings = Setting::first();
     $currenturl = url()->full();
-
+    
     if (isset($landing) && !empty($landing)) {
         $meta_title = @$landing->meta_title;
         $meta_description = @$landing->meta_description;
@@ -99,7 +99,7 @@
                         <h1>{{ $landing->hero_title }}</h1>
                         <p>{{ $landing->hero_description }}</p>
                         <div class="video">
-                            @if($landing->video)
+                            @if ($landing->video)
                                 <div class="play-button">
                                     <a data-fancybox="" href="{{ @$landing->video }}">
                                         <i>
@@ -169,10 +169,12 @@
                             </div>
                         </div>
                         <div class="group-img">
-                            <input type="text" name="contact_name" id="contact_name" placeholder="Your Name" required>
+                            <input type="text" name="contact_name" id="contact_name" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="group-img">
-                            <input type="email" name="email_address" id="email_address" placeholder="Email Address" required>
+                            <input type="email" name="email_address" id="email_address"
+                                placeholder="Email Address" required>
                         </div>
                         <div class="group-img">
                             <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile Number"
@@ -190,7 +192,7 @@
                             <textarea rows="4" name="message" id="message"></textarea>
                         </div>
 
-                        <input type="hidden" name="slug" id="slug" value="{{$landing->slug}}">
+                        <input type="hidden" name="slug" id="slug" value="{{ $landing->slug }}">
                         <button type="submit" class="btn batton">Book a Free Consultation</button>
                     </form>
                 </div>
@@ -198,21 +200,66 @@
         </div>
     </section>
 
+    @if($landing->counter == 1)
+        <section id="about">
+            <div class="container">
+                <div class="business-performance">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="business-performance-text">
+                                <h4>Business Performance Increases</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="customers-performance">
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="40" data-speed="1500">40
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Happy Satisfied<br> Customers</p>
+                                </div>
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="75" data-speed="1500">75
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Completed<br> Projects</p>
+                                </div>
+                                <div class="performance">
+                                    <div class="performance-count">
+                                        <h2 class="timer count-title count-number" data-to="20" data-speed="1500">20
+                                        </h2>
+                                        <span><sup>+</sup></span>
+                                    </div>
+                                    <p>Expert Team <br> Members</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
+
     <section id="about" class="mb-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="@if($landing->image_01) col-lg-7 @else col-lg-12 @endif">
+                <div class="@if ($landing->image_01) col-lg-7 @else col-lg-12 @endif">
                     <div class="heading">
                         <h2>{{ $landing->intro_title }}</h2>
                     </div>
                     <div class="we-are">
-                        {{  $landing->intro_description }}
+                        {{ $landing->intro_description }}
                     </div>
                 </div>
-                @if($landing->image_01)
+                @if ($landing->image_01)
                     <div class="col-lg-5">
                         <div class="we-are-img">
-                            <img alt="{{ $landing->hero_title }}" alt="{{ $landing->hero_title }}" src="{{ $landing->image_01 }}">
+                            <img alt="{{ $landing->hero_title }}" alt="{{ $landing->hero_title }}"
+                                src="{{ $landing->image_01 }}">
                         </div>
                     </div>
                 @endif
@@ -222,14 +269,14 @@
 
     <section class="how-it-works gap">
         <div class="container">
-          <div class="heading">
-              <h2>{{ $landing->content_title }}</h2>
-          </div>
-          <div class="row">
-              <div class="col-xs-12">
-                 {!! $landing->description !!}
-              </div>
-          </div>
+            <div class="heading">
+                <h2>{{ $landing->content_title }}</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    {!! $landing->description !!}
+                </div>
+            </div>
         </div>
     </section>
 

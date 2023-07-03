@@ -93,6 +93,14 @@
                                     </div>
 
                                     <div class="mb-3">
+                                        <label class="form-label">Show Counter</label>
+                                        <select class="form-control" name="counter">
+                                            <option value="1" @if($row->counter == 1) selected @endif>Yes</option>
+                                            <option value="0" @if($row->counter == 0) selected @endif>No</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
                                         <label class="form-label"> Meta Title</label>
                                         <input type="text" class="form-control" name="meta_title"
                                             value="{{ old('meta_title', isset($row->meta_title) ? $row->meta_title : '') }}">
