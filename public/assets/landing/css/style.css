@@ -82,10 +82,11 @@ img {
 ul {
     padding: 0;
     margin: 0;
+    list-style-type: disc;
 }
 
 li {
-    display: block;
+    list-style-type: disc;
 }
 
 figure {
@@ -608,12 +609,11 @@ form.get-a-quote i {
 
 .how-it-works ul {
     padding-left: 20px;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .how-it-works ul li {
-    display: block;
-    list-style-type: circle !important;
+    list-style-type: disc !important;
     line-height: 35px;
 }
 
