@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-md-6 col-xl-auto">
+                <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">PRODUCTS</h3>
                         <div class="menu-all-pages-container">
@@ -113,7 +113,7 @@
                             </ul>
                         </div>
                     </div>
-                </div> --}}
+                </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
                         <h3 class="widget_title">Recent Posts</h3>
