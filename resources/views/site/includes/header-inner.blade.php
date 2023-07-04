@@ -65,7 +65,7 @@
                                 <li><a href="{{route('contact')}}">Contact</a></li>
                             </ul>
                             </nav>
-                            <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i class="fa fa-bars"></i></button>
                         </div>
                     </div>
                 </div>
