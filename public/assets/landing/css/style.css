@@ -867,3 +867,12 @@ input[type="checkbox"]:checked:after {
 .my-float {
     margin-top: 16px;
 }
+
+.offer-float {
+    position: fixed;
+    width: 220px;
+    height: 220px;
+    bottom: 20px;
+    left: 40px;
+    z-index: 100;
+}

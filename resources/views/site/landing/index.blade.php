@@ -66,6 +66,9 @@
         <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
 
+    <div class="offer-float">
+        <img alt="Eid Offer" src="{{ asset('assets/landing/img/50off.png') }}" height="180">
+    </div>
     <header id="">
         <div class="container">
             <div class="nav">
