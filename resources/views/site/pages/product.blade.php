@@ -22,18 +22,18 @@
                             <img src="{{ $row->image_01 }}" alt="{{ $row->title }}">
                         </div>
                         <div class="page-content">
-                            <h2 class="h3 page-title">{{ $row->sub_title }}</h2>
+                            {{-- <h2 class="h3 page-title">{{ $row->sub_title }}</h2> --}}
                             {!! $row->description !!}
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_download">
+                        {{-- <div class="widget widget_download">
                             <div class="download-widget-wrap">
-                                <a href="{{ $row->demo_link }}" class="as-btn" target="_blank"><i class="fa-light fa-globe me-2"></i>View Demo</a>
+                                <a href="{{ $row->demo_link }}" class="as-btn" target="_blank"><i class="fa fa-globe me-2"></i>View Demo</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="widget widget_banner" data-bg-src="{{@$cta->image}}">
                             <div class="widget-banner">
                                 <span class="text">{{@$cta->caption}}</span>
