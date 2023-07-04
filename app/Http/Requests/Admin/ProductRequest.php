@@ -26,7 +26,7 @@ class ProductRequest extends ApiRequest
             'slug' => 'required|unique:products,slug,'.$this->id,
             'title' => 'required',
             'sub_title' => '',
-            'image_01' => 'required',
+            'image_01' => '',
             'image_02' => '',
             'image_03' => '',
             'image_04' => '',

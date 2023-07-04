@@ -22,7 +22,7 @@
                             <img src="{{ $row->image_01 }}" alt="{{ $row->title }}">
                         </div> --}}
                         <div class="page-img">
-                            <iframe style="width: 100%" height="500" src="{{ $row->demo_link }}" title="{{ $row->title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                            <iframe style="width: 100%" height="450" src="{{ $row->demo_link }}" title="{{ $row->title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
                         </div>
                         <div class="page-content">
                             {{-- <h2 class="h3 page-title">{{ $row->sub_title }}</h2> --}}
