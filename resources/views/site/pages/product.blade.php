@@ -18,8 +18,11 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
-                        <div class="page-img">
+                        {{-- <div class="page-img">
                             <img src="{{ $row->image_01 }}" alt="{{ $row->title }}">
+                        </div> --}}
+                        <div class="page-img">
+                            <iframe style="width: 100%" height="315" src="{{ $row->demo_link }}" title="{{ $row->title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
                         </div>
                         <div class="page-content">
                             {{-- <h2 class="h3 page-title">{{ $row->sub_title }}</h2> --}}
