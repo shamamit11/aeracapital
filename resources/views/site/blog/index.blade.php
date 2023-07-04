@@ -19,9 +19,11 @@
                 <div class="col-xxl-8 col-lg-7">
                     @foreach($blogs as $blog)
                         <div class="as-blog blog-single has-post-thumbnail">
-                            <div class="blog-img">
-                                <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{$blog->title}}"></a>
-                            </div>
+                            @if($blog->main_image)
+                                <div class="blog-img">
+                                    <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{$blog->title}}"></a>
+                                </div>
+                            @endif
                             <div class="blog-content">
                                 <div class="blog-meta">
                                     <a class="author" href="#">{{$blog->posted_by}}</a>
@@ -43,9 +45,11 @@
                             <div class="recent-post-wrap">
                                 @foreach($blogs as $blog)
                                     <div class="recent-post">
-                                        <div class="media-img">
-                                            <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{$blog->title}}"></a>
-                                        </div>
+                                        @if($blog->main_image)
+                                            <div class="media-img">
+                                                <a href="{{route('blog-detail', [$blog->slug])}}"><img src="{{ $blog->main_image }}" alt="{{$blog->title}}"></a>
+                                            </div>
+                                        @endif
                                         <div class="media-body">
                                             <h4 class="post-title" style="margin:0; font-size: 16px;"><a class="text-inherit" href="{{route('blog-detail', [$blog->slug])}}">{{$blog->title}}</a></h4>
                                             <div class="recent-post-meta">
