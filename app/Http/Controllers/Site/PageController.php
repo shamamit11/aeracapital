@@ -175,6 +175,7 @@ class PageController extends Controller
         $lead->mobile = $request['mobile_no'];
         $lead->company = $request['company_name'] ? $request['company_name'] : '';
         $lead->package = $request['service'] ? $request['service'] : $request['message'];
+        $lead->save();
 
         Mail::send('email.leadform', $emailData, function ($message) use ($request) {
             $message->to('info@aera-capital.com');
