@@ -2,283 +2,319 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://aera-capital.com</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/about-us</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/services</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blogs</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/contact-us</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/faq</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/package/digital-transformation-for-startup-business</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/package/digital-transformation-for-existing-business</loc>
-        <lastmod>2023-07-04T00:01:14+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:23+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
+        <loc>https://aera-capital.com/product/clinic-management-system</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
         <loc>https://aera-capital.com/service/website-design-development</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/search-engine-optimization</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/digital-marketing-services</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/ppc-management-services</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/content-marketing</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/crm-erp-solutions</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/custom-web-development</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/e-commerce-solutions</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/service/mobile-app-development</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/website-designing-service-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/website-designing-cost-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/web-application-development-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/elevate-your-real-estate-business-with-aera-capitals-exceptional-website-design-service-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/how-a-dubai-based-web-design-company-can-help-your-business-stand-out-online</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/must-have-features-for-your-ecommerce-website-development</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/embrace-the-future-with-digital-transformation-services-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/unlocking-the-potential-of-mobile-app-development-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/the-benefits-of-partnering-with-a-digital-transformation-company-for-your-next-project</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/revamp-your-online-presence-with-the-best-e-commerce-website-design-company-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/maximizing-your-online-presence-why-you-need-a-web-development-company-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/factors-that-influence-the-cost-of-a-website-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/how-custom-web-development-services-in-dubai-can-take-your-online-presence-to-the-next-level</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/how-digital-transformation-can-help-your-startup-business-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/how-to-choose-the-right-dubai-web-design-agency-for-your-business</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/the-ultimate-guide-how-to-start-a-successful-business-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/essential-strategies-for-launching-a-successful-startup-business</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/blog/the-future-of-e-commerce-in-dubai-trends-and-predictions</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
+        <loc>https://aera-capital.com/blog/the-ultimate-guide-to-finding-jobs-in-dubai-top-job-finder-websites</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
+        <loc>https://aera-capital.com/blog/the-top-recruitment-agency-in-dubai-to-submit-your-cv</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
+        <loc>https://aera-capital.com/blog/top-it-companies-in-dubai-a-comprehensive-guide</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
+        <loc>https://aera-capital.com/blog/freelancing-visa-in-dubai-for-it-professionals</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+            </url>
+    <url>
+        <loc>https://aera-capital.com/blog/elevate-your-business-efficiency-with-custom-software-development-in-dubai</loc>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-design-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-development-company-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/mobile-app-development-company-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/inventory-management-system-aero</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/clinic-management-system-aero</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-design-sharjah</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-design-abu-dhabi</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-design-uae</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/digital-transformation-services-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/web-design-company-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/digital-marketing-company-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
     <url>
         <loc>https://aera-capital.com/best-rated-hr-software-in-dubai</loc>
-        <lastmod>2023-07-04T00:01:15+00:00</lastmod>
+        <lastmod>2023-07-06T00:01:24+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
             </url>
