@@ -174,7 +174,13 @@ class PageController extends Controller
         $lead->email = $request['email_address'];
         $lead->mobile = $request['mobile_no'];
         $lead->company = $request['company_name'] ? $request['company_name'] : '';
-        $lead->package = $request['service'] ? $request['service'] : $request['message'];
+        $lead->message = $request['message'];
+
+        if(@$request['service']) {
+            $lead->package = $request['service'];
+        } else {
+            $lead->package = $request['slug'];
+        }
         $lead->save();
 
         Mail::send('email.leadform', $emailData, function ($message) use ($request) {
