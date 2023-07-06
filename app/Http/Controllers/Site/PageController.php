@@ -179,7 +179,21 @@ class PageController extends Controller
         if(@$request['service']) {
             $lead->package = $request['service'];
         } else {
-            $lead->package = $request['slug'];
+            if(@$request['slug'] == 'customer-relationship-management-software') {
+                $lead->package = 'CRM';
+            }
+            else if(@$request['slug'] == 'best-rated-hr-software-in-dubai') {
+                $lead->package = 'HRMS';
+            }
+            else if(@$request['slug'] == 'digital-marketing-agency-dubai') {
+                $lead->package = 'Digital Marketing';
+            }
+            else if(@$request['slug'] == 'web-design-company-dubai') {
+                $lead->package = 'Web Design';
+            }
+            else {
+                $lead->package = @$request['slug'];
+            }
         }
         $lead->save();
 
