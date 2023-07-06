@@ -39,6 +39,12 @@
                                                 <th scope="row">Package</th>
                                                 <td>{{ $row->package }}</td>
                                             </tr>
+                                            @if ($row->message)
+                                            <tr>
+                                                <th scope="row">Message</th>
+                                                <td>{{ @$row->message }}</td>
+                                            </tr>
+                                        @endif
                                             @if ($row->addons)
                                                 <tr>
                                                     <th scope="row">Addons</th>
