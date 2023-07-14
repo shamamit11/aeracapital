@@ -26,6 +26,7 @@ Route::post('/contact-form-action', 'PageController@contactFormAction')->name('c
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::get('/page/{slug}', 'PageController@cms')->name('page');
 Route::get('/404', 'PageController@error404')->name('404');
+Route::get('/confirmation', 'PageController@confirmation')->name('confirmation');
 
 //landing page
 Route::get('/digital-transformation', 'PageController@digitalTransformation')->name('digital-transformation');
