@@ -202,8 +202,9 @@ class PageController extends Controller
             $message->subject('New Lead Submission !!');
         });
 
-        $message = "success";
-        return $message;
+        return redirect()->route('confirmation');
+        //$message = "success";
+        //return $message;
     }
 
     public function contactFormAction(Request $request) {
@@ -219,7 +220,18 @@ class PageController extends Controller
             $message->to('info@aera-capital.com');
             $message->subject('New Contact Form Submission !!');
         });
+        
         $message = "Contact Form was submitted Successfully !! We will get back you shortly !!!";
         return $message;
+    }
+
+
+    public function confirmation(Request $request)
+    {
+        $nav = '';
+        $sub_nav = '';
+        $page_title = '';
+        $seo_link = url()->current();
+        return view('site.pages.confirmation', compact('nav', 'sub_nav', 'page_title', 'seo_link'));
     }
 }

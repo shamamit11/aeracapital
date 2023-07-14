@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <form role="form" class="get-a-quote" id="contact-form" method="post"
+                    <form role="form" class="get-a-quote" id="lead-form" method="post"
                         action={{ route('landing-form-action') }} enctype="multipart/form-data">
                         @csrf
                         <div class="mb-lg-4 mb-4 d-flex align-items-center">
