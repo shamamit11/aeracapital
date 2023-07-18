@@ -36,6 +36,24 @@ class LeadService
         }
     }
 
+    public function update($request)
+    {
+        try {
+            Lead::where('id', $request->id)
+                ->update([
+                    'comment' => $request->comment,
+                ]);
+
+                $response['message'] = "Data Updated";
+                $response['errors'] = false;
+                $response['status_code'] = 201;
+                return response()->json($response, 201);
+                
+        } catch (\Exception$e) {
+            return response()->json(['errors' => $e->getMessage()], 400);
+        }
+    }
+
     public function delete($request)
     {
         try {

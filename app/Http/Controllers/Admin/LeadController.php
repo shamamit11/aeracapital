@@ -39,6 +39,11 @@ class LeadController extends Controller
         return view('admin.lead.view', compact('nav', 'sub_nav', 'page_title'), $data);
     }
 
+    public function update(Request $request)
+    {
+        return $this->lead->update($request);
+    }
+
     public function delete(Request $request)
     {
         return $this->lead->delete($request);

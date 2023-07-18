@@ -32,7 +32,8 @@ class LeadFormRequest extends WebRequest
             'business_consultation' => '',
             'business_solutions' => '',
             'development' => '',
-            'marketing' => ''
+            'marketing' => '',
+            'comment' => ''
         ];
     }
 }

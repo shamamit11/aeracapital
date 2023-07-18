@@ -162,5 +162,6 @@ Route::group(['middleware' => 'adminauth'], function () {
         Route::get('/leads', 'index')->name('admin-leads');
         Route::get('/lead/view', 'view')->name('admin-lead-view');
         Route::post('/lead/delete', 'delete')->name('admin-lead-delete');
+        Route::post('/lead/update', 'update')->name('admin-lead-update');
     });
 });

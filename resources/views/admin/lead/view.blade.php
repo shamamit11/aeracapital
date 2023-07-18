@@ -82,6 +82,22 @@
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <div class="mt-4">
+                                    <form enctype="multipart/form-data" method="post" action="{{ route('admin-lead-update') }}" id="form">
+                                        @csrf
+                                        <input type="hidden" class="form-control" name="id" id='id'
+                                        value="{{ isset($row->id) ? $row->id : 0 }}">
+
+                                        <label class="form-label">Comments</label>
+                                        <textarea class="form-control" name="comment" id="comment" rows="10" required>{{ old('comment', isset($row->comment) ? $row->comment : '') }}</textarea>
+                                        <div class="error" id='error_comment'></div>
+                                        
+                                        <div class="mt-2">
+                                            <button type="submit" class="btn btn-primary  btn-loading">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,4 +105,7 @@
             </div>
             @include('admin.includes.footer')
         </div>
+    @endsection
+    @section('footer-scripts')
+        @include('admin.lead.js.update')
     @endsection

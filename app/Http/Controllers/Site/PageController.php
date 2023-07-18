@@ -175,6 +175,7 @@ class PageController extends Controller
         $lead->mobile = $request['mobile_no'];
         $lead->company = $request['company_name'] ? $request['company_name'] : '';
         $lead->message = $request['message'];
+        $lead->comment = '';
 
         if(@$request['service']) {
             $lead->package = $request['service'];

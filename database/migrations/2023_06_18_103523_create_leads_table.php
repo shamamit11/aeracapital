@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('business_solutions')->nullable();
             $table->text('development')->nullable();
             $table->text('marketing')->nullable();
+            $table->text('comment')->nullable();
             $table->timestamps();
         });
     }
