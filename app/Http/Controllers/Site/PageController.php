@@ -217,13 +217,20 @@ class PageController extends Controller
             'remarks' => $request['remarks'],
             'service' => $request['service'],
         ];
-        Mail::send('email.contactform', $emailData, function ($message) use ($request) {
-            $message->to('info@aera-capital.com');
-            $message->subject('New Contact Form Submission !!');
-        });
-        
-        $message = "Contact Form was submitted Successfully !! We will get back you shortly !!!";
-        return $message;
+
+        if($request['name'] != 'Roberturite') {
+            Mail::send('email.contactform', $emailData, function ($message) use ($request) {
+                $message->to('info@aera-capital.com');
+                $message->subject('New Contact Form Submission !!');
+            });
+            
+            $message = "Contact Form was submitted Successfully !! We will get back you shortly !!!";
+            return $message;
+        } else {
+            $message = "Error !!";
+            return $message;
+        }
+       
     }
 
 
