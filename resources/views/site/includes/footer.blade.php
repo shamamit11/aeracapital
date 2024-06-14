@@ -174,7 +174,7 @@
     </svg>
 </div>
 
-<a href="https://api.whatsapp.com/send?phone=97145299497&text=Hello"
+<a href="https://api.whatsapp.com/send?phone=971552337904&text=Hello"
     class="float" target="_blank">
     <i class="fa-brands fa-whatsapp my-float"></i>
 </a>
